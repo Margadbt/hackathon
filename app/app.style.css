@@ -1,0 +1,29 @@
+.app-main-wrapper {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 1.25rem;
+}
+
+aside.index-aside {
+  width: 100%;
+  margin-left: auto;
+
+  border-radius: 20px;
+  border: 3px solid;
+  border-color: var(--color-border);
+  background: var(--color-background);
+}
+aside.index-aside section {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(16.125rem, 1fr));
+  justify-content: center;
+  gap: var(--gap-1);
+
+  margin: 1em;
+}
+aside.index-aside section h2 {
+  font-size: var(--heading-5);
+  font-weight: var(--bold);
+  margin-top: 4px;
+}
