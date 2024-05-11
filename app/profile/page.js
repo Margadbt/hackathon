@@ -1,13 +1,16 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import "@/app/profile/style.css";
 import ProfileRoomCard from "@/components/ProfileRoomCard";
+import profileImg from "@/public/assets/Navbar-profile.svg";
 
 export default function Home() {
   return (
     <main class="body">
       <div class="profile-wrapper">
-        <div class="left-side"></div>
+        <div class="left-side">
+          <img src="profileImg" alt="profile-icon" />
+          <p>User0021</p>
+        </div>
         <div class="right-side">
           <section class="verified">
             <h2>Баталгаажсан :</h2>
