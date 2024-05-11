@@ -23,9 +23,9 @@
     background: var(--color-background);
   }
   aside.index-aside section {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    grid-template-columns: repeat(auto-fill, minmax(16.125rem, 1fr));
     justify-content: center;
     gap: var(--gap-1);
   

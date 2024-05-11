@@ -1,21 +1,21 @@
-import "./style.css"
+import "./style.css";
 export default function EventDetailCard() {
     return (
-      <div className="event-detail-card">
+      <div className="main">
         <p>Дэлгэрэнгүй</p>
         <div className="studentNumber">
             <p>Оюутны тоо:</p>
             <p className="num">20</p>
         </div>
-        <div className="where">
+        <div >
             <p>Хаана:</p>
-            <p className="num">20</p>
+           <p className="when">МУИС 8-р байр 409 тоот</p>
         </div>
         <div>
-            <p>Оюутны тоо:</p>
-            <p>20</p>
+            <p>Хэзээ:</p>
+            <p className="where">2024.05.30</p>
         </div>
-        <p>Бүртгүүлэх</p>
+        <b><p>Бүртгүүлэх</p></b>
         <div>
             <button className="submit-button">Оролцох</button>
         </div>

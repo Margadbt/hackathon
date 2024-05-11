@@ -2,6 +2,7 @@ import EventCard from "@/components/EventCard";
 import "./styles.css"
 
 import ProfileRoomCard  from "@/components/ProfileRoomCard";
+import RoomCard from "@/components/RoomCard";
 // khangal preview
 export default function EventPage(){
     return(
@@ -11,33 +12,31 @@ export default function EventPage(){
 <EventCard></EventCard>
 <EventCard></EventCard>
 <EventCard></EventCard>
-<EventCard></EventCard>
-<EventCard></EventCard>
-<EventCard></EventCard>
-<EventCard></EventCard>
-<EventCard></EventCard>
+
 </div>
 <div className="Event-sidebar">
 <aside class="index-aside">
         <section>
           <h2>Онцлох ангиуд</h2>
           <a href="class.html" class="class-section-3">
-            <ProfileRoomCard></ProfileRoomCard>
+            <RoomCard/>
           </a>
           <a href="class.html" class="class-section-3">
-          <ProfileRoomCard></ProfileRoomCard>
+          <RoomCard/>
           </a>
           <a href="class.html" class="class-section-3">
-          <ProfileRoomCard></ProfileRoomCard>
+          <RoomCard/>
           </a>
           <a href="class.html" class="class-section-3">
-          <ProfileRoomCard></ProfileRoomCard>
+          <RoomCard/>
+
           </a>
           <a href="class.html" class="class-section-3">
-          <ProfileRoomCard></ProfileRoomCard>
+      <RoomCard/>
+
           </a>
           <a href="class.html" class="class-section-3">
-          <ProfileRoomCard></ProfileRoomCard>
+          <RoomCard/>
           </a>
         </section>
       </aside>

@@ -1,0 +1,16 @@
+.time-select-card{
+    font-weight: var(--bold);
+    font-size: var(--large);
+    background-color: white;
+    box-shadow: var(--shadow-1);
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    transition: 0.25s all ease;
+}
+
+.time-select-card:hover{
+    background-color: var(--color-accent);
+    cursor: pointer;
+}
