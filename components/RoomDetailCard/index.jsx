@@ -6,13 +6,12 @@ export default function RoomDetailCard() {
   return (
     <div className="room-detail-card-container">
       <div className="room-detail-card">
-        <div style={{ borderRight: "2px solid rgb(0, 0, 0, 0.1)" }}>Лекц</div>
-        <div style={{ borderRight: "2px solid rgb(0, 0, 0, 0.1)" }}>
-          <p>Суудлын тоо</p>55
+        <div className="feauture right-line feature-info">Лекц</div>
+        <div className="feauture right-line">
+          Суудлын тоо
+          <span className="feature-info">55</span>
         </div>
-        <div>
-          <p>Проектор</p>Icon
-        </div>
+        <div className="feauture">Проектор</div>
       </div>
     </div>
   );

@@ -1,3 +1,27 @@
-.room-detail-head{
+.room-detail-head-container{
+    margin: 10rem 0 5rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.room-detail-head-image{
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #E3E3E3;
+    & p{
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        font-weight: var(--bold);
+    }
+    & .room-image{
+        width: 500px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+.request-room-section{
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+    padding-top: 2rem;
 }
