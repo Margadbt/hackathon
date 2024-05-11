@@ -1,0 +1,29 @@
+.room-detail-card-container{
+    background-color: white;
+    box-shadow: var(--shadow-1);
+    padding:1.25rem;
+    border-radius: 50px;
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+
+}
+
+.room-detail-card{
+    display: flex;
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+    }
+}
+
+.right-line{
+    border-right: 2px solid rgb(0, 0, 0, 0.1);
+}
+
+.feature-info{
+    font-size: var(--large);
+    font-weight: var(--bold);
+}

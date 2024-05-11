@@ -7,7 +7,6 @@ export default function Home() {
     <main class="body">
       <div class="profile-wrapper">
         <div class="left-side">
-          <img src="profileImg" alt="profile-icon" />
           <p>User0021</p>
         </div>
         <div class="right-side">
@@ -17,11 +16,16 @@ export default function Home() {
               <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
             </div>
           </section>
           <section class="waiting">
             <h2>Хүлээгдэж буй :</h2>
             <div class="card-wrapper">
+              <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
             </div>
