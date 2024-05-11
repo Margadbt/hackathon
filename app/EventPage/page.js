@@ -12,7 +12,8 @@ export default function EventPage(){
 <EventCard></EventCard>
 <EventCard></EventCard>
 <EventCard></EventCard>
-        </div>
+
+</div>
 <div className="Event-sidebar">
 <aside class="index-aside">
     <section>
