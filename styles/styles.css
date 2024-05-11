@@ -1,5 +1,3 @@
-
-
 html,
 body,
 div,
@@ -72,7 +70,7 @@ class-section:hover {
 
   padding: 1rem 6rem;
 
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .main-header-2 {
@@ -290,7 +288,7 @@ class-section:hover {
   height: 3rem;
   cursor: pointer;
   color: var(--color-text);
-  &:hover{
+  &:hover {
     border: 2px solid var(--color-border);
   }
 }

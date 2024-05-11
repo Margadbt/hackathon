@@ -1,13 +1,19 @@
-
+import RoomCard from "@/components/RoomCard";
 
 
 export default function Home() {
   return (
     <main>
       <div>
-
-{/* oirtwol alna */}
-
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
+        <RoomCard></RoomCard>
       </div>
     </main>
   );

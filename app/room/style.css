@@ -26,3 +26,11 @@
   border-top: 1px solid rgb(0, 0, 0, 0.2);
   padding-top: 2rem;
 }
+
+.request-room-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+  align-items: flex-start;
+  justify-content: center;
+}

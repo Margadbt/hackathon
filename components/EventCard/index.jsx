@@ -1,30 +1,29 @@
 import Image from 'next/image';
 import "./styles.css"
 import classImage from "@/assets/rooms.jpg";
+import "./style.css";
 
 const EventCard = () => {
   return (
-  
-    <article className="event-section">
+    <article className="class-section-2">
       <div className="img">
-        <Image src={classImage} alt="classroom picture"  />
+        <Image src={classImage} alt="classroom picture" />
       </div>
-      <section className="event-details">
+      <section className="details">
         <div className="heartdetailsgrid">
-          <div className="event-font">
+          <div className="font">
             <h3>Event Name</h3>
-            <div className="event-class-type">event </div>
-            <div className="event-class-type">Decsription </div>
+            <div className="class-type">event </div>
           </div>
         </div>
-        <div className='event-para'>
+        <div className="para">
           <p>8-409</p>
           <p>04.03 13:00</p>
+          {/* daskdjaslknd */}
         </div>
-
       </section>
     </article>
-   );
+  );
 };
 
 export default EventCard;
