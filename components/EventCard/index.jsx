@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; // Import Image component from Next.js
+import Image from 'next/image';
 
 import classImage from "./rooms.png";
 
