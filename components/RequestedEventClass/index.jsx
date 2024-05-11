@@ -1,67 +1,32 @@
 import React from 'react';
-
+import './style.css'
 const RequestedEventClass = () => {
-    const schedule = [
-        {
-            date: '03/11',
-            sessions: [
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: true },
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: true },
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: false }
-            ]
-        },
-        {
-            date: '03/13',
-            sessions: [
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: true },
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: true }
-            ]
-        },
-        {
-            date: '03/14',
-            sessions: [
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: false }
-            ]
-        },
-        {
-            date: '03/15',
-            sessions: [
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: true },
-                { time: '16:00 - 16:25', session: 'Лекц', duration: '25 мин', status: true }
-            ]
-        }
-    ];
+
 
     return (
         <div>
-            <h1>Schedule</h1>
-            <div>
-                {schedule.map((day, index) => (
-                    <div key={index}>
-                        <h2>{day.date}</h2>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>Time</th>
-                                <th>Session</th>
-                                <th>Duration</th>
-                                <th>Status</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {day.sessions.map((session, idx) => (
-                                <tr key={idx}>
-                                    <td>{session.time}</td>
-                                    <td>{session.session}</td>
-                                    <td>{session.duration}</td>
-                                    <td>{session.status ? '✅' : '❌'}</td>
-                                </tr>
-                            ))}
-                            </tbody>
-                        </table>
+                <div className="admin-container">
+                    <div className="request-day">
+                        <h2>03/11 Даваа</h2>
+                        <div className="request-item">
+                            <div className="time-room">
+                                <p>1-407 · Лекц</p>
+                                <p>16:00</p>
+                            </div>
+                            <div className="status">
+                                <p>Клубын үүзалт</p>
+                                <p>25 хүн</p>
+                            </div>
+                            <div className="actions">
+                                <button className="approve">✔️</button>
+                                <button className="reject">❌</button>
+                            </div>
+                        </div>
+                        {/* Repeat .request-item for more requests */}
                     </div>
-                ))}
-            </div>
+                    {/* Repeat .request-day for more days */}
+                </div>
+
         </div>
     );
 };

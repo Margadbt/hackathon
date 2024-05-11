@@ -3,6 +3,7 @@ import "./styles.css"
 
 import ProfileRoomCard  from "@/components/ProfileRoomCard";
 import RoomCard from "@/components/RoomCard";
+import RoomCardList from "@/components/RoomCard/RoomCardList";
 // khangal preview
 export default function EventPage(){
     return(
@@ -18,30 +19,7 @@ export default function EventPage(){
 <aside class="index-aside">
     <section>
         <h2>Онцлох event</h2>
-        <a href="class.html" className="class-section-9">
-            <RoomCard/>
-
-        </a>
-        <a href="class.html" className="class-section-9">
-            <RoomCard/>
-
-        </a>
-        <a href="class.html" className="class-section-9">
-            <RoomCard/>
-
-        </a>
-        <a href="class.html" className="class-section-9">
-            <RoomCard/>
-
-        </a>
-        <a href="class.html" className="class-section-9">
-            <RoomCard/>
-
-        </a>
-        <a href="class.html" className="class-section-9">
-            <RoomCard/>
-
-        </a>
+        <RoomCardList></RoomCardList>
         {/*    <a href="class.html" class="class-section-3">*/}
         {/*    <RoomCard/>*/}
         {/*    </a>*/}

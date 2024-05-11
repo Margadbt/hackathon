@@ -1,37 +1,22 @@
 import "@/app/app.style.css";
 import RoomCard from "@/components/RoomCard";
 import "@/styles/index.css";
-import "@/app/app.style.css";
-import SearchBar from "@/components/SearchBar";
+import RoomCardList from "@/components/RoomCard/RoomCardList";
 
 export default function Home() {
   return (
     <main>
-      <div className="app-main-wrapper">
-        <div className="left-side">
-          <SearchBar classNameName="app-search-bar"></SearchBar>
-          <div className="main-content">
-            {/* <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard> */}
+      <div class="app-main-wrapper">
+        <div class="left-side">
+          <div class="filter-bar"></div>
+          <div class="main-content">
+
           </div>
         </div>
-        <aside className="index-aside">
+        <aside class="index-aside">
           <section>
             <h2>Яг одоо сул</h2>
-            {/* <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard> */}
+              <RoomCardList></RoomCardList>
           </section>
         </aside>
       </div>
