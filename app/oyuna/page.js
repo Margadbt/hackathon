@@ -1,0 +1,1 @@
+// oyuna yumaa harna
