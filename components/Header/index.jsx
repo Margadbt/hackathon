@@ -19,16 +19,16 @@ const Header = () => {
     <div className="main-header">
       <nav>
         <div className="wrapper-wrap">
-          <Link href={"#"} className="header-logo">
+          <a href={"/"} className="header-logo">
             <Image src={logo} alt="classroom-picture" className="hero-image" />
-          </Link>
+          </a>
           <div className="header-wrap">
-            <Link href={""}>
+            <a href={"/"}>
               <div className="nav-item">Сул анги хайх</div>
-            </Link>
-            <Link href={""}>
+            </a>
+            <a href={"/event"}>
               <div className="nav-item">Эвент</div>
-            </Link>
+            </a>
           </div>
         </div>
         <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>

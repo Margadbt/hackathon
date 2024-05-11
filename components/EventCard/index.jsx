@@ -3,14 +3,21 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import "./styles.css";
 import classImage from "@/assets/rooms.jpg";
+import Link from 'next/link';
 
 const EventCard = ({data}) => {
-  
-
+  let i = Math.floor(Math.random() * 10000) + 1;
   return (
+    <a href={`/event/${data.id}`}>
     <article className="event-section">
       <div className="img">
-        <Image src={classImage} alt="classroom picture" />
+      <img
+              src={`https://source.unsplash.com/random/400x250/?classroom&${i}`}
+              alt="classroom-picture"
+              className="image"
+           
+          />
+
       </div>
       <section className="event-details">
         <div className="heartdetailsgrid">
@@ -25,6 +32,8 @@ const EventCard = ({data}) => {
         </div>
       </section>
     </article>
+    </a>
+    
   );
 };
 
