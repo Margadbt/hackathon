@@ -21,24 +21,17 @@ export default function Home() {
         <aside class="index-aside">
           <section>
             <h2>Онцлох ангиуд</h2>
-            <a href="class.html" class="class-section-3">
-              <RoomCard />
-            </a>
-            <a href="class.html" class="class-section-3">
-              <RoomCard />
-            </a>
-            <a href="class.html" class="class-section-3">
-              <RoomCard />
-            </a>
-            <a href="class.html" class="class-section-3">
-              <RoomCard />
-            </a>
-            <a href="class.html" class="class-section-3">
-              <RoomCard />
-            </a>
-            <a href="class.html" class="class-section-3">
-              <RoomCard />
-            </a>
+            <RoomCard />
+
+            <RoomCard />
+
+            <RoomCard />
+
+            <RoomCard />
+
+            <RoomCard />
+
+            <RoomCard />
           </section>
         </aside>
       </div>
