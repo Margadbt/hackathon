@@ -1,20 +1,31 @@
+'use client'
+import React, { useState } from 'react';
 import RequestForm from "@/components/RequestForm";
 import RoomDetailCard from "@/components/RoomDetailCard";
-import "./style.css";
 import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
 export default function Room() {
-  return (
-    <main>
-      <div className="room-detail-head">
-        <p>7-203</p>
-        {/* image */}
-        <RoomDetailCard />
-      </div>
-      <div className="request-room-section">
-        <Calendar></Calendar>
-        <RequestForm />
-      </div>
-    </main>
-  );
+    const [fixedDate, setFixedDate] = useState(new Date());
+
+    function handleDateChange(date) {
+        setFixedDate(date);
+        console.log(date)
+    }
+
+    return (
+        <main>
+            <div className="{roomDetailHead}">
+                <p>7-203</p>
+                <RoomDetailCard />
+            </div>
+            <div className="{styles.requestRoomSection}">
+                <Calendar
+                    onChange={handleDateChange}
+                    value={fixedDate}
+                />
+                <RequestForm />
+            </div>
+        </main>
+    );
 }

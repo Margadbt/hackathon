@@ -11,7 +11,14 @@ function RequestForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(purpose)
+    console.log(description)
+    console.log(people)
+    console.log(phoneNumber1)
+    console.log(phoneNumber2)
   };
+
+
 
   return (
     <div className="request-form-card">
@@ -66,7 +73,6 @@ function RequestForm() {
               className="form-attr"
               type="tel"
               name="phone"
-              pattern="[0-9]{4}-[0-9]{4}"
               value={phoneNumber1}
               onChange={(e) => setPhoneNumber1(e.target.value)}
               required
@@ -81,7 +87,6 @@ function RequestForm() {
               className="form-attr"
               type="tel"
               name="phone"
-              pattern="[0-9]{4}-[0-9]{4}"
               value={phoneNumber2}
               onChange={(e) => setPhoneNumber2(e.target.value)}
               required
