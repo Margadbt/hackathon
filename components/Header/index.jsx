@@ -4,7 +4,7 @@ import Link from 'next/link';
 import UserPopUp from './UserPopUp';
 import "./style.css";
 
-const Index = () => {
+const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
   const togglePopUp = () => {
@@ -37,4 +37,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Header;

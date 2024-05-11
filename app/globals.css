@@ -63,6 +63,10 @@
   --margin-1: 6rem;
 }
 
+body{
+  margin-top: 200px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-text: rgb(255, 255, 255);
