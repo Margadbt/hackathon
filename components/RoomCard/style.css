@@ -14,9 +14,91 @@ a {
 html {
   font-family: var(--font-family-1);
 }
-.main-wrapper {
+.class-section-1 > article {
+  display: flex;
+  /* width: 18.75rem; */
+  background: var(--color-background);
+  position: relative;
+}
+.class-section-1 {
+  border-radius: 20px;
+  border: 3px solid;
+  border-color: var(--color-border);
+  transition: all 0.2s ease-out;
+  box-shadow: var(--shadow-1);
+}
+.class-section-1:hover {
+  border-color: rgba(42, 71, 28, 0.8);
+  box-shadow: var(--shadow-3);
 }
 
+.class-section-1 .head-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.class-section-1 .image {
+  width: 50%;
+
+  border-radius: 20px 0 0 20px;
+  /* border-color: var(--color-border); */
+}
+.class-section-1 .heart-grey {
+  width: 1.3rem;
+  right: 0.8em;
+}
+.class-section-1 .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1em 0.8em;
+  width: 100%;
+}
+.class-section-1 h3 {
+  font-weight: var(--semi-bold);
+  font-size: var(--medium-size);
+  line-height: var(--line-height-4);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+.class-section-1 .class-type {
+  margin-top: -0.5em;
+  font-weight: var(--medium);
+  font-size: var(--tiny);
+  line-height: var(--line-height-4);
+  color: var(--color-light-grey);
+  white-space: nowrap;
+}
+.class-section-1 .class-info {
+  display: flex;
+}
+.class-section-1 .class-info {
+  gap: 1em;
+  margin-top: 1.2em;
+  font-weight: var(--medium);
+  font-size: var(--small);
+  color: var(--color-light-grey);
+}
+/* .seat-count::before {
+
+  top: 0.3rem;
+  content: url("../assets/Seat-logo.svg");
+  width: 0.9rem;
+  height: 1.4rem;
+  margin-right: 5px;
+}
+.projector {
+  top: 0.2rem;
+  width: 1.6rem;
+  height: 1.4rem;
+  margin-right: 5px;
+}
+.proj-off::before {
+  content: url("../assets/Projector-off.svg");
+}
+.proj-on::before {
+  content: url("../assets/Projector.svg");
+} */
 /* .main {
   display: grid;
   grid-template-columns: 20% 80%;

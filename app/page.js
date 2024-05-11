@@ -1,12 +1,14 @@
 import RoomCard from "@/components/RoomCard";
+import "@/styles/index.css";
+import "@/app/app.style.css";
 
 export default function Home() {
   return (
     <main>
-      <div class="main-wrapper">
+      <div class="app-main-wrapper">
         <div class="left-side">
           <div class="filter-bar"></div>
-          <div class="class-wrapper">
+          <div class="main-content">
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
@@ -20,18 +22,14 @@ export default function Home() {
         </div>
         <aside class="index-aside">
           <section>
-            <h2>Онцлох ангиуд</h2>
-            <RoomCard />
-
-            <RoomCard />
-
-            <RoomCard />
-
-            <RoomCard />
-
-            <RoomCard />
-
-            <RoomCard />
+            <h2>Яг одоо сул</h2>
+            <RoomCard></RoomCard>
+            <RoomCard></RoomCard>
+            <RoomCard></RoomCard>
+            <RoomCard></RoomCard>
+            <RoomCard></RoomCard>
+            <RoomCard></RoomCard>
+            <RoomCard></RoomCard>
           </section>
         </aside>
       </div>
