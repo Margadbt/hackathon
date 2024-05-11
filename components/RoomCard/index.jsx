@@ -2,9 +2,11 @@ import "./style.css";
 const RoomCard = () => {
     return (
         <article className="class-section-2">
-            <div className="img">
-                {/* <img src='{classImage}' alt="classroom picture" className="image" /> */}
-            </div>
+            <img
+                src="https://source.unsplash.com/random/400x250/?classroom,lesson&${i}"
+                alt="classroom-picture"
+                className="image"
+            />
             <section className="details">
                 <div className="heartdetailsgrid">
                     <div className="font">

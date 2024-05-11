@@ -1,16 +1,17 @@
-
-
-import EventCard from "@/components/EventCard";
-import ProfileRoomCard from "@/components/ProfileRoomCard";
-import RoomCard from "@/components/RoomCard";
 import RoomDetailCard from "@/components/RoomDetailCard";
+import RoomCard from "@/components/RoomCard";
+import ProfileRoomCard from "@/components/ProfileRoomCard";
+
 
 export default function Home() {
   return (
     <main>
-      <div class="mainLayout">
+      <div>
+
+{/* oirtwol alna */}
           <RoomDetailCard></RoomDetailCard>
-{/* oirtwol a   lna */}
+          <RoomCard></RoomCard>
+          <ProfileRoomCard></ProfileRoomCard>
 
       </div>
     </main>

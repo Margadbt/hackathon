@@ -24,7 +24,7 @@ const Header = () => {
       {/*  className="hero-image"*/}
       {/*/>*/}
         </Link>
-        <Link href={""} >
+        <Link href={"/"} >
          <div>Home</div>
         </Link>
          <Link href={""} >
