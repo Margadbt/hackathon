@@ -3,6 +3,7 @@ import "@/components/SearchBar/button.js";
 import Image from "next/image";
 import HorLine from "@/assets/Line.svg";
 import SearchIcon from "@/assets/Search-button.svg";
+import "@/app/script/FreeAngi.js";
 
 const SearchBar = () => {
   return (

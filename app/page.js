@@ -11,6 +11,7 @@ export default function Home() {
         <div class="left-side">
           <SearchBar class="app-search-bar"></SearchBar>
           <div class="main-content">
+            {/* <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
@@ -18,20 +19,19 @@ export default function Home() {
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
+            <RoomCard></RoomCard> */}
           </div>
         </div>
         <aside class="index-aside">
           <section>
             <h2>Яг одоо сул</h2>
+            {/* <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
+            <RoomCard></RoomCard> */}
           </section>
         </aside>
       </div>
