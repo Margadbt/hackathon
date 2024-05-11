@@ -56,7 +56,6 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip ;
-  margin-right: 0px;
 }
 .class-section-1 h3 {
   font-weight: 300;
@@ -82,15 +81,14 @@ html {
   font-size: var(--small);
   color: var(--color-light-grey);
 }
-/* .seat-count::before {*/
+/* .seat-count::before {
 
-/*  top: 0.3rem;*/
-/*  content: url("../assets/Seat-logo.svg");*/
-/*  width: 0.9rem;*/
-/*  height: 1.4rem;*/
-/*  margin-right: 5px;*/
-/*}*/
- /*
+  top: 0.3rem;
+  content: url("../assets/Seat-logo.svg");
+  width: 0.9rem;
+  height: 1.4rem;
+  margin-right: 5px;
+}
 .projector {
   top: 0.2rem;
   width: 1.6rem;
@@ -239,7 +237,4 @@ header{
   gap: 0.75rem;
   grid-template-columns: repeat(auto-fit, minmax(17rem,1fr));
   justify-content: center;
-}
-.seat-count{
-  padding: 10px;
 }

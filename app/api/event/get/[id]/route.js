@@ -1,17 +1,31 @@
 import { db } from '@/app/firebase'; 
-import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
+import { collection, query, where, getDocs } from 'firebase/firestore';
 
 export async function GET(req, { params }) {
   try {
-    const { id } = params; 
+    const { event_id } = params; // Extracting the event_id from the params object
     
+    // Reference to the 'event' collection in Firestore
+    const eventCollectionRef = collection(db, 'event');
     
-    const elementRef = doc(db, 'event', id);
+    // Query for documents where 'event_id' field matches the provided event_id
+    const q = query(eventCollectionRef, where('event_id', '==', event_id));
     
-    const elementDoc = await getDoc(elementRef);
-    const data = elementDoc.data();
+    // Retrieve matching documents
+    const querySnapshot = await getDocs(q);
 
-    return new Response(JSON.stringify( { id: elementDoc.id ,...data} ), {
+    // Check if any documents match the query
+    if (querySnapshot.empty) {
+      return new Response(`Event with ID ${event_id} not found`, {
+        status: 404,
+      });
+    }
+
+    // Extract the data from the first matching document (assuming event_id is unique)
+    const eventData = querySnapshot.docs[0].data();
+
+    // Return the document data
+    return new Response(JSON.stringify({ eventData }), {
       status: 200,
       headers: {
         'Content-Type': 'application/json'

@@ -23,7 +23,7 @@ const RoomCard = ({ room }) => {
             <div className="class-info">
               <div className="seat-count">{room.suudlyn_too}</div>
               {/* Display seat count dynamically */}
-              {/*<div className="class_size">{room.talbain_khemjee}</div>*/}
+              <div className="class_size">{room.talbain_khemjee}</div>
               <div className="projector">
                 {/* Display projector availability dynamically */}
                 <div className={`projector ${room.proyektortoi_esekh === "Проекторгүй" ? "proj-off" : "proj-on"}`}></div>
