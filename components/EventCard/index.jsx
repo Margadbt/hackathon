@@ -6,18 +6,19 @@ import "./style.css"
 const EventCard = () => {
   return (
   
-    <article className="class-section-2">
+    <article className="event-section">
       <div className="img">
         <Image src={classImage} alt="classroom picture"  />
       </div>
-      <section className="details">
+      <section className="event-details">
         <div className="heartdetailsgrid">
-          <div className="font">
+          <div className="event-font">
             <h3>Event Name</h3>
-            <div className="class-type">event </div>
+            <div className="event-class-type">event </div>
+            <div className="event-class-type">Decsription </div>
           </div>
         </div>
-        <div className='para'>
+        <div className='event-para'>
           <p>8-409</p>
           <p>04.03 13:00</p>
         </div>
