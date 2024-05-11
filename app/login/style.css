@@ -27,8 +27,11 @@
     & img{
         width: 45px;
         height: 45px;
-        border:solid rgb(110,220,65);
+        border:solid rgb(105, 170, 80);
         border-radius: 10px;
+    }
+    & h1{
+        color:rgb(105, 170, 80);
     }
 }
 
@@ -72,7 +75,7 @@
     border: 2px solid rgb(110,220,65);;
     border-radius: 40px;
     font-size: 16px;
-    color: azure;
+    color: rgb(105, 170, 80);;
     padding: 20px 45px 20px 20px;
 
 
@@ -81,7 +84,7 @@ input:focus,
 input:valid{
     color:rgb(110,220,65);;
     border:2px solid rgb(110,220,65);;
-    background-color: rgb(110,220,65);;
+    background-color: rgb(255,255,255);;
 }
 input:focus + .label ,
 input:valid + .label{
@@ -119,6 +122,13 @@ input:valid + .label{
 .user{
     display: flex;
     flex-direction: row;
+    & label{
+        color:rgb(123, 165, 106);
+
+    }
+}
+.forgetpass{
+    color:rgb(110,220,65);
 }
 
 .remember label input {
@@ -152,7 +162,7 @@ input:valid + .label{
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: rgb(71, 64, 124);
+    color: rgb(105, 170, 80);
     font-weight: 600;
 }
 
@@ -168,7 +178,7 @@ input:valid + .label{
 
 .new-user a {
     text-align: center;
-    color: #fff;
+    color:rgb(105, 170, 80) ;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
@@ -178,20 +188,10 @@ input:valid + .label{
 
 
 }
-.error-message{
-    border:1px;
-    border-radius: 15px;
-    background-color: rgb(162, 97, 209);
-    color:white;
-    align-self:center;
-    padding:0.9rem;
-}
+
 .login{
     display: flex;
     flex-direction: column;
     gap:15px;
 
-}
-.fa-eye,.fa-eye-slash{
-    color: rgb(71, 64, 124);
 }
