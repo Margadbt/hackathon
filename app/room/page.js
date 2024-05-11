@@ -5,6 +5,7 @@ import Calendar from "react-calendar";
 import Image from "next/image";
 import rooms from "../../assets/rooms.jpg"
 import RoomCard from "@/components/RoomCard";
+import AvailableTimeSection from "@/components/AvailableTimeSection";
 
 export default function Room() {
   return (
@@ -18,8 +19,8 @@ export default function Room() {
       </div>
       <div className="request-room-section">
         <Calendar></Calendar>
+        <AvailableTimeSection />
         <RequestForm />
-        <RoomCard />
       </div>
     </main>
   );
