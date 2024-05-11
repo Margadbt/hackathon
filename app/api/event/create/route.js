@@ -1,17 +1,35 @@
-// pages/api/postData.js
-import { postDataToFirebase } from '../../utils/firebase';
+import { db } from '../../../firebase'; 
+import { doc, setDoc, collection, addDoc } from 'firebase/firestore';
 
-export default async function handler(req, res) {
+export async function POST(req, res) {
   if (req.method === 'POST') {
     try {
-      const data = req.body;
-      const response = await postDataToFirebase(data);
-      res.status(200).json({ message: 'Data posted successfully', data: response });
+      const postData = await req.json();
+
+      const eventCollection = collection(db, "event");
+
+      await addDoc(eventCollection, {
+        date: postData.date,
+        description: postData.description,
+        image_url: postData.image_url,
+        location: postData.location,
+        name: postData.name
+      })
+
+      
+
+      return new Response("Amjilttai nemegdlee!", {
+        status: 200,
+      })
     } catch (error) {
       console.error('Failed to post data:', error);
-      res.status(500).json({ error: 'Failed to post data to Firebase' });
+      return new Response("Dotood asuudal!", {
+        status: 500,
+      })
     }
   } else {
-    res.status(405).json({ error: 'Method Not Allowed' });
+    return new Response("Method not allowed", {
+        status: 405,
+      })
   }
 }
