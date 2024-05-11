@@ -1,9 +1,16 @@
+import "@/app/script/FreeAngi.js";
 import HorLine from "@/assets/Line.svg";
 import SearchIcon from "@/assets/Search-button.svg";
+<<<<<<< Updated upstream
 import SearchBarBairList from "../SearchBarBairList";
 import "@/styles/styles.css";
 import Image from "next/image";
 import React, { useState } from "react";
+=======
+import "@/components/SearchBar/button.js";
+import "@/styles/styles.css";
+import Image from "next/image";
+>>>>>>> Stashed changes
 
 const SearchBar = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
