@@ -1,10 +1,21 @@
+"use client";
 import "@/app/app.style.css";
 import RoomCard from "@/components/RoomCard";
 import "@/styles/index.css";
 import "@/app/app.style.css";
 import SearchBar from "@/components/SearchBar";
+import { useEffect } from "react";
+import { fetching } from "./script/FreeAngi";
 
 export default function Home() {
+  useEffect(() => {
+    async function getFreeRoom() {
+      const rooms = await fetching();
+    }
+
+    getFreeRoom();
+  }, []);
+
   return (
     <main>
       <div className="app-main-wrapper">
