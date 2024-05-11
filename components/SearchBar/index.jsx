@@ -14,13 +14,15 @@ const SearchBar = () => {
   return (
     <nav>
       <div class="search-bar">
-        <button id="bair-button" onClick={togglePopUp}>
-          <span>Хичээлийн байр</span>
-          <span class="light-grey" id="bair-info">
-            2-р байр
-          </span>
-        </button>
-        {isPopUpVisible && <SearchBarBairList></SearchBarBairList>}
+        <li className="bair">
+          <button id="bair-button" onClick={togglePopUp}>
+            <span>Хичээлийн байр</span>
+            <span class="light-grey" id="bair-info">
+              2-р байр
+            </span>
+          </button>
+          {isPopUpVisible && <SearchBarBairList></SearchBarBairList>}
+        </li>
         <Image src={HorLine} alt="line" />
         <li class="odor">
           <button id="calendar-button">
