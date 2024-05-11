@@ -60,7 +60,7 @@ const SearchBar = () => {
         <Image src={HorLine} alt="line" />
         <li class="tsag">
           <button>
-            <span>Өдөр</span>
+            <span>Цаг</span>
             <span className="light-grey" id="bair-info">
               <select
                 className="light-grey selector"
