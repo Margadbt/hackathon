@@ -1,11 +1,7 @@
 import React from 'react';
-// import classImage from './src/assets/class.jpg';
-// import heartGreyIcon from './src/assets/Heart-grey.svg';
-// import './src/styles/RoomCartComponent.css';
-// import cancelIcon from './src/assets/cancal.png';
 import "./style.css"
-
-const RoomCard = () => {
+import "../../public/All.css"
+const ProfileRoomCard = () => {
     return (
         <article className="class-section-2">
             <div className="img">
@@ -38,4 +34,6 @@ const RoomCard = () => {
     );
 };
 
-export default RoomCard;
+export default ProfileRoomCard;
+// import heartGreyIcon from './styles/assets/Heart-grey.svg'; // Adjust the path as necessary
+
