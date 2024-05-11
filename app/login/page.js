@@ -36,9 +36,7 @@ export default function LoginForm({ onLogin }) {
                             <input type="checkbox" className="checkbox" id="rememberMe" />
                             <label htmlFor="rememberMe">Хэрэглэгчийг санах</label>
                         </div>
-                        <div className="forgetpass">
-                            <a href="#" >Нууц үгээ мартсан уу?</a>
-                        </div>
+
                     </div>
                 </div>
                 <div className="login">

@@ -1,6 +1,5 @@
-import React from 'react';
-import "./style.css"
-import "../../public/All.css"
+import "./style.css";
+
 
 const RoomCard = ({ data, index }) => {
     // Encode data for URL
