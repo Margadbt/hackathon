@@ -59,7 +59,7 @@ class-section:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 1000;
   background-color: var(--color-background);
   box-shadow: var(--shadow-1);
 }
@@ -76,7 +76,7 @@ class-section:hover {
 .main-header-2 {
   position: sticky;
   top: 0;
-  z-index: 4;
+  z-index: 1000;
   background: var(--color-background);
   box-shadow: var(--shadow-2);
 }
@@ -232,7 +232,7 @@ class-section:hover {
   flex-direction: column;
   margin: 1em 0.8em;
   width: 10rem;
-
+  margin-right: 0px;
 }
 .class-section-1 h3 {
   font-weight: var(--semi-bold);
@@ -260,7 +260,7 @@ class-section:hover {
   color: var(--color-light-grey);
 }
 .seat-count::before {
-  /* position: relative; */
+
   top: 0.3rem;
   content: url("../assets/Seat-logo.svg");
   width: 0.9rem;
@@ -462,6 +462,7 @@ footer {
   }
   .class-section-1 .text-wrapper {
     margin: 0.875em 0.5em 0.75em;
+    margin-right: 0px;
   }
   .class-section-1 h3 {
     font-size: var(--medium-size);

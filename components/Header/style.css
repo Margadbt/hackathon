@@ -1,0 +1,19 @@
+.header-wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-text);
+
+  & a {
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: var(--medium);
+  }
+}
+.wrapper-wrap {
+  display: flex;
+  gap: 3.5rem;
+}
+.pop-up-btn {
+  box-shadow: var(--shadow-2) !important;
+}

@@ -1,11 +1,11 @@
-import { db } from '../../../firebase'; 
+import { db } from '@/app/firebase'; 
 import { collection, getDocs } from 'firebase/firestore';
 
 
 export async function GET(req, res) {
   if (req.method === 'GET') {
     try {
-      const eventCollection = collection(db, "event");
+      const eventCollection = collection(db, "request");
 
       const querySnapshot = await getDocs(eventCollection);
 
