@@ -3,13 +3,11 @@ import "./style.css";
 const ProfileRoomCard = () => {
     return (
         <article className="class-section-2">
-            <div class="image-wrapper">
             <img
                 src="https://source.unsplash.com/random/400x250/?classroom,lesson&${i}"
                 alt="classroom-picture"
                 class="image"
               />
-            </div>
             <section className="details">
                 
                     <div className="font">
