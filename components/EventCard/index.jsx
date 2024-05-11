@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
-import classImage from "./rooms.png";
+import classImage from "@/assets/rooms.jpg";
+import "@/styles/user.css"
 
 const EventCard = () => {
   return (
