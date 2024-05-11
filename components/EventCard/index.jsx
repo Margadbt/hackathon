@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
-import classImage from "@/assets/rooms.jpg";
-import "./style.css"
+import classImage from "./rooms.png";
 
 const EventCard = () => {
   return (
