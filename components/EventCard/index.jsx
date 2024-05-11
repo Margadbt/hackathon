@@ -1,10 +1,10 @@
-import React from 'react';
 import Image from 'next/image';
 
-import classImage from "./rooms.png";
+import classImage from "./rooms.jpg";
 
 const EventCard = () => {
   return (
+    <div className='main'>
     <article className="class-section-2">
       <div className="img">
         <Image src={classImage} alt="classroom picture" width={300} height={200} />
@@ -22,8 +22,10 @@ const EventCard = () => {
             <span>04.04 13:00</span>
           </li>
         </ul>
+        
       </section>
     </article>
+    </div>
   );
 };
 
