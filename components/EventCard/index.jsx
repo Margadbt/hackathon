@@ -1,12 +1,13 @@
 import Image from 'next/image';
 
+import classImage from "./rooms.png";
 
 const EventCard = () => {
   return (
     <div className='main'>
     <article className="class-section-2">
       <div className="img">
-        <Image src={classImage} alt="classroom picture" width={300} height={200} />
+        <Image src={classImage} alt="classroom picture" className='img' />
       </div>
       <section className="details">
         <div className="heartdetailsgrid">
