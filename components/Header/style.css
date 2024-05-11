@@ -14,3 +14,6 @@
   display: flex;
   gap: 3.5rem;
 }
+.pop-up-btn {
+  box-shadow: var(--shadow-2) !important;
+}

@@ -5,7 +5,9 @@ import Link from "next/link";
 import UserPopUp from "./UserPopUp";
 import Image from "next/image";
 import logo from "@/assets/Logo.svg";
+import NavbarProfile from "@/assets/Navbar-profile.svg";
 import "@/styles/styles.css";
+
 const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
@@ -30,7 +32,7 @@ const Header = () => {
           </div>
         </div>
         <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>
-          <i className="fa-regular fa-user"></i>
+          <Image src={NavbarProfile} alt="Profile" className="user-logo" />
         </button>
         {isPopUpVisible && <UserPopUp />}
       </nav>
