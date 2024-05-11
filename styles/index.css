@@ -1,7 +1,5 @@
 /* --------------------HOME-PAGE-MAIN--------------- */
-.hero-image {
-  
-}
+
 .search-bar {
   width: 100%;
   height: 4.375rem;
@@ -252,10 +250,10 @@ main {
   .main-header nav {
     margin: -1.5em 0 0 0;
     & .header-logo {
-      display: none;
+      /* display: none; */
     }
     & #profile-btn {
-      display: none;
+      /* display: none; */
     }
   }
   .line-svg {
@@ -314,7 +312,7 @@ main {
 /* ------------------------POP- UPS------------------------ */
 
 .bair-list {
-  display: none;
+  /* display: none; */
   position: absolute;
   z-index: 999;
   width: 20rem;
@@ -358,8 +356,8 @@ main {
   display: grid !important;
 }
 .tsag-list {
-  display: none;
-  display: none;
+  /* display: none;
+  display: none; */
   position: absolute;
   z-index: 999;
   width: 15rem;

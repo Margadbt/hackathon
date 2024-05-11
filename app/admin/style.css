@@ -1,0 +1,8 @@
+h1{
+    padding-left: 2rem;
+}
+.dashboard-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}

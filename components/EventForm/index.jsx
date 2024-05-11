@@ -17,13 +17,26 @@ function EventForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = {
-            name: name,
-            when: when,
-            where: where,
-            description: description,
-            image: image
+            "name": name,
+            "date": when,
+            "location": where,
+            "description": description,
+            "image_url": "oyuna"
         };
-        console.log(data);
+        async function postRequest(data){
+            const response = await fetch("/api/event/create", {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                  
+                },
+                body: JSON.stringify(data)
+              });
+              return response
+        }
+        
+        console.log(postRequest(data))
+
     };
 
     return (
