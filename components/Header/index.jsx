@@ -24,11 +24,11 @@ const Header = () => {
       {/*  className="hero-image"*/}
       {/*/>*/}
         </Link>
-        <Link href={"/"} >
-         <div>Home</div>
+        <Link href={""} >
+         <div class="nav-item">Сул анги хайх</div>
         </Link>
          <Link href={""} >
-          <div>Event</div>
+          <div class="nav-item">Эвент</div>
         </Link>
         <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>
           <i className="fa-regular fa-user"></i>

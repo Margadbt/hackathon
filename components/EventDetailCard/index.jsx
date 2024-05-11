@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-export default function Detail() {
-=======
-import "./style.css"
+import "./style.css";
 export default function EventDetailCard() {
->>>>>>> 6d5a4e1cf41bc484f00dc51ba9cf69a9acfd24ee
     return (
       <div className="main">
         <p>Дэлгэрэнгүй</p>
@@ -11,15 +7,15 @@ export default function EventDetailCard() {
             <p>Оюутны тоо:</p>
             <p className="num">20</p>
         </div>
-        <div className="where">
+        <div >
             <p>Хаана:</p>
-            <p className="num">20</p>
+           <p className="when">МУИС 8-р байр 409 тоот</p>
         </div>
         <div>
-            <p>Оюутны тоо:</p>
-            <p>20</p>
+            <p>Хэзээ:</p>
+            <p className="where">2024.05.30</p>
         </div>
-        <p>Бүртгүүлэх</p>
+        <b><p>Бүртгүүлэх</p></b>
         <div>
             <button className="submit-button">Оролцох</button>
         </div>
