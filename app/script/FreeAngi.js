@@ -104,6 +104,7 @@ function fetching() {
       });
 
       console.log(freeHuwaariArray);
+      console.log("aaa");
       return freeHuwaariArray;
     });
 }

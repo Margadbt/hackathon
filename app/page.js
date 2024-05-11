@@ -7,10 +7,10 @@ import SearchBar from "@/components/SearchBar";
 export default function Home() {
   return (
     <main>
-      <div class="app-main-wrapper">
-        <div class="left-side">
-          <SearchBar class="app-search-bar"></SearchBar>
-          <div class="main-content">
+      <div className="app-main-wrapper">
+        <div className="left-side">
+          <SearchBar classNameName="app-search-bar"></SearchBar>
+          <div className="main-content">
             {/* <RoomCard></RoomCard>
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
@@ -22,7 +22,7 @@ export default function Home() {
             <RoomCard></RoomCard> */}
           </div>
         </div>
-        <aside class="index-aside">
+        <aside className="index-aside">
           <section>
             <h2>Яг одоо сул</h2>
             {/* <RoomCard></RoomCard>
