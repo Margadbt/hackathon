@@ -41,8 +41,6 @@ header{
   overflow: hidden;
   border-radius: 1rem;
   height: 100%;
-  width: 20rem;
-  /*turdee*/
   display: grid;
   grid-template-columns: 50% 30% 10%;
 
