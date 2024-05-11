@@ -1,6 +1,5 @@
 import HorLine from "@/assets/Line.svg";
 import SearchIcon from "@/assets/Search-button.svg";
-import "@/components/SearchBar/bairlist.js";
 import "@/styles/styles.css";
 import Image from "next/image";
 
