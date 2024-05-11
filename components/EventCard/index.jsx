@@ -5,29 +5,26 @@ import "./style.css"
 
 const EventCard = () => {
   return (
-    <div className='main'>
+  
     <article className="class-section-2">
       <div className="img">
-        <Image src={classImage} alt="classroom picture" className='img' />
+        <Image src={classImage} alt="classroom picture"  />
       </div>
       <section className="details">
         <div className="heartdetailsgrid">
           <div className="font">
-            <h3>Hackathon</h3>
-            <div className="class-type">Hackum</div>
+            <h3>Event Name</h3>
+            <div className="class-type">event </div>
           </div>
         </div>
-        <ul>
-          <li>8-409</li>
-          <li>
-            <span>04.04 13:00</span>
-          </li>
-        </ul>
-        
+        <div className='para'>
+          <p>8-409</p>
+          <p>04.03 13:00</p>
+        </div>
+
       </section>
     </article>
-    </div>
-  );
+   );
 };
 
 export default EventCard;
