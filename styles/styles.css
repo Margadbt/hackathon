@@ -346,7 +346,6 @@ hr {
   position: absolute;
   right: 6rem;
   top: 5rem;
-  display: none;
 }
 .open {
   display: block !important;

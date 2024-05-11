@@ -1,8 +1,25 @@
-function fetching() {
+export function fetching() {
   return fetch("https://api.npoint.io/7915813b5c6c20fecb21")
     .then((response) => response.json())
     .then((initialData) => {
       // console.log(initialData );
+
+      const convertToNumber = (timeStr) => {
+        const [hoursStr, minutesStr] = timeStr.split(":");
+        return parseInt(hoursStr, 10) * 100 + parseInt(minutesStr, 10);
+      };
+
+      const convertToTimeStamp = (minutes) => {
+        const hours = Math.floor(minutes / 100);
+        const mins = minutes % 100;
+        return `${hours.toString().padStart(2, "0")}:${mins
+          .toString()
+          .padStart(2, "0")}`;
+      };
+
+      let currYear = 2024;
+      let currMonth = 6;
+      let startDay = 12;
 
       const groupByUruuniiDugaar = (data) => {
         const groupedData = {};
@@ -104,7 +121,7 @@ function fetching() {
       });
 
       console.log(freeHuwaariArray);
+
       return freeHuwaariArray;
     });
 }
-fetching();
