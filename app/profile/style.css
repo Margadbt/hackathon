@@ -17,7 +17,7 @@ body {
   margin: 3.2rem;
 
   border-radius: 20px;
-  border: 1px solid var(--color-border);
+  border: 2.25px solid var(--color-border);
 
   padding: 2em;
 }
@@ -37,7 +37,7 @@ body {
 .card-wrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 
   gap: 1.5em;
 }

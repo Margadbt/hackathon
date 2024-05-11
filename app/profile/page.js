@@ -16,11 +16,16 @@ export default function Home() {
               <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
             </div>
           </section>
           <section class="waiting">
             <h2>Хүлээгдэж буй :</h2>
             <div class="card-wrapper">
+              <ProfileRoomCard></ProfileRoomCard>
+              <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
             </div>
