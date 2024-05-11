@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-all);
+
 
 }
 
@@ -24,14 +24,8 @@
     flex-direction: row;
     justify-content: center;
     gap:10px;
-    & img{
-        width: 45px;
-        height: 45px;
-        border:solid rgb(105, 170, 80);
-        border-radius: 10px;
-    }
     & h1{
-        color:rgb(105, 170, 80);
+        color:black;
     }
 }
 
@@ -39,12 +33,12 @@
 
 .wrapper {
     width: 420px;
-    background: transparent;
-    border: 3px solid rgb(110,220,65);
-    color: aliceblue;
+    background-color: #f0f0f0; /* Light gray background color */
+    border: 1px solid rgba(48, 47, 47 ,0.5);
+    color: #333; /* Dark text color */
     border-radius: 10px;
     padding: 30px 40px;
-
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .wrapper h1 {
@@ -72,7 +66,7 @@
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgb(110,220,65);;
+    border: 2px solid black;
     border-radius: 40px;
     font-size: 16px;
     color: rgb(105, 170, 80);;
@@ -82,8 +76,8 @@
 }
 input:focus,
 input:valid{
-    color:rgb(110,220,65);;
-    border:2px solid rgb(110,220,65);;
+    color:rgb(110,220,65);
+    border:2px solid rgb(110,220,65);
     background-color: rgb(255,255,255);;
 }
 input:focus + .label ,
@@ -122,14 +116,13 @@ input:valid + .label{
 .user{
     display: flex;
     flex-direction: row;
+    gap:0.2rem;
     & label{
-        color:rgb(123, 165, 106);
+        color:black;
 
     }
 }
-.forgetpass{
-    color:rgb(110,220,65);
-}
+
 
 .remember label input {
     accent-color: #fff;
@@ -162,7 +155,8 @@ input:valid + .label{
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: rgb(105, 170, 80);
+    background-color: rgb(110,220,65);
+    color: black;
     font-weight: 600;
 }
 
@@ -178,7 +172,7 @@ input:valid + .label{
 
 .new-user a {
     text-align: center;
-    color:rgb(105, 170, 80) ;
+    color:black ;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;

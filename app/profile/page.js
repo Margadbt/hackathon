@@ -1,7 +1,6 @@
 import Image from "next/image";
 import "@/app/profile/style.css";
 import ProfileRoomCard from "@/components/ProfileRoomCard";
-import profileImg from "@/public/assets/Navbar-profile.svg";
 
 export default function Home() {
   return (
