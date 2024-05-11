@@ -1,14 +1,15 @@
+import "./style.css"
 export default function Detail() {
     return (
-      <div>
+      <div className="event-detail-card">
         <p>Дэлгэрэнгүй</p>
-        <div>
+        <div className="studentNumber">
             <p>Оюутны тоо:</p>
-            <p>20</p>
+            <p className="num">20</p>
         </div>
-        <div>
-            <p>Оюутны тоо:</p>
-            <p>20</p>
+        <div className="where">
+            <p>Хаана:</p>
+            <p className="num">20</p>
         </div>
         <div>
             <p>Оюутны тоо:</p>
@@ -16,7 +17,7 @@ export default function Detail() {
         </div>
         <p>Бүртгүүлэх</p>
         <div>
-            <button>Оролцох</button>
+            <button className="submit-button">Оролцох</button>
         </div>
       </div>
     );
