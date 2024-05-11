@@ -16,18 +16,18 @@ const RoomCard = ({ room }) => {
           <div className="text-wrapper">
             <div className="head-wrapper">
               {/* Display classroom number dynamically */}
-              <h3>{room.Хичээлийн_байр} {room.Өрөөний_дугаар}</h3>
+              <h3>{room.khicheeliin_bair} {room.uruunii_dugaar}</h3>
             </div>
             {/* Display class type (зориулалт) dynamically */}
-            <div className="class-type">{room.Өрөөний_зориулалт}</div>
+            <div className="class-type">{room.uruunii_zoriulalt}</div>
             <div className="class-info">
-              <div className="schedule_available">{room.Хичээлийн_хуваарь_тавих_боломж}</div>
-              <div className="seat-count">{room.Суудлын_тоо}</div>
+              <div className="schedule_available">{room.khicheeliin_khuvaari_tavikh_bolomj}</div>
+              <div className="seat-count">{room.suudlyn_too}</div>
               {/* Display seat count dynamically */}
-              <div className="class_size">{room.Талбайн_хэмжээ}</div>
+              <div className="class_size">{room.talbain_khemjee}</div>
               <div className="projector">
                 {/* Display projector availability dynamically */}
-                <div className={`projector ${room.Проектортой_эсэх === "Проекторгүй" ? "proj-off" : "proj-on"}`}></div>
+                <div className={`projector ${room.proyektortoi_esekh === "Проекторгүй" ? "proj-off" : "proj-on"}`}></div>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@
 import "@/app/app.style.css";
 import RoomCard from "@/components/RoomCard";
 import "@/styles/index.css";
+import RoomCardList from "@/components/RoomCard/RoomCardList";
 import "@/app/app.style.css";
 import SearchBar from "@/components/SearchBar";
 import { useEffect } from "react";
@@ -36,13 +37,7 @@ export default function Home() {
         <aside className="index-aside">
           <section>
             <h2>Яг одоо сул</h2>
-            {/* <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard>
-            <RoomCard></RoomCard> */}
+              <RoomCardList></RoomCardList>
           </section>
         </aside>
       </div>
