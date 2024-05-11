@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import UserPopUp from './UserPopUp';
-import "./style.css";
 
 const Index = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
