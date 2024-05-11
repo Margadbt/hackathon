@@ -6,7 +6,7 @@ import UserPopUp from './UserPopUp';
 import Image from 'next/image';
 import logo from "@/assets/Logo.svg"
 import "@/styles/styles.css"
-const Index = () => {
+const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
   const togglePopUp = () => {

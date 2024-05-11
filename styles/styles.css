@@ -70,7 +70,7 @@ class-section:hover {
   display: flex;
   flex-wrap: nowrap;
 
-  margin: 2.875rem 6rem;
+  margin: 1rem 6rem;
 
   justify-content: space-around;
   align-items: center;
