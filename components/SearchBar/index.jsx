@@ -67,11 +67,34 @@ const SearchBar = () => {
         </li>
         <Image src={HorLine} alt="line" />
         <li class="tsag">
-          <button id="tsag-button">
-            <span>Цаг</span>
-            <time id="tsag-info" class="light-grey">
-              16:00 - 19:20
-            </time>
+          <button>
+            <span>Өдөр</span>
+            <span className="light-grey" id="bair-info">
+              <select
+                className="light-grey selector"
+                name=""
+                id=""
+                onChange={(e) => setBair(e.target.value)}
+              >
+                <option>07:40</option>
+                <option>08:25</option>
+                <option>09:20</option>
+                <option>10:05</option>
+                <option>11:00</option>
+                <option>11:45</option>
+                <option>12:40</option>
+                <option>13:25</option>
+                <option>14:20</option>
+                <option>15:05</option>
+                <option>16:00</option>
+                <option>16:45</option>
+                <option>17:40</option>
+                <option>18:25</option>
+                <option>19:20</option>
+                <option>20:05</option>
+                <option>21:00</option>
+              </select>
+            </span>
           </button>
           <ul class="tsag-list" id="tsag-list">
             <li>
