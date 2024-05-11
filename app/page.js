@@ -1,6 +1,6 @@
+import "@/app/app.style.css";
 import RoomCard from "@/components/RoomCard";
 import "@/styles/index.css";
-import "@/app/app.style.css";
 
 export default function Home() {
   return (

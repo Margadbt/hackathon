@@ -18,6 +18,9 @@ function RequestForm() {
       phone_number_one: phoneNumber1,
       phone_number_two: phoneNumber2
     }
+
+    fetch("post", "api/request")
+
     console.log(data)
   };
 
