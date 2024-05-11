@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 
 import classImage from "@/assets/rooms.jpg";
@@ -6,6 +5,7 @@ import "./style.css"
 
 const EventCard = () => {
   return (
+    <div className='main'>
     <article className="class-section-2">
       <div className="img">
         <Image src={classImage} alt="classroom picture" className='img' />
@@ -23,8 +23,10 @@ const EventCard = () => {
             <span>04.04 13:00</span>
           </li>
         </ul>
+        
       </section>
     </article>
+    </div>
   );
 };
 
