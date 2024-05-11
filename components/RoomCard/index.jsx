@@ -6,7 +6,7 @@ const RoomCard = ({ room }) => {
   let i = Math.floor(Math.random() * 10000) + 1;
 
   return (
-      <a href="#" className="class-section-1">
+      <div className="class-section-1">
         <article>
           <img
               src={`https://source.unsplash.com/random/400x250/?classroom&${i}`}
@@ -21,7 +21,6 @@ const RoomCard = ({ room }) => {
             {/* Display class type (зориулалт) dynamically */}
             <div className="class-type">{room.uruunii_zoriulalt}</div>
             <div className="class-info">
-              <div className="schedule_available">{room.khicheeliin_khuvaari_tavikh_bolomj}</div>
               <div className="seat-count">{room.suudlyn_too}</div>
               {/* Display seat count dynamically */}
               <div className="class_size">{room.talbain_khemjee}</div>
@@ -32,7 +31,7 @@ const RoomCard = ({ room }) => {
             </div>
           </div>
         </article>
-      </a>
+      </div>
   );
 };
 

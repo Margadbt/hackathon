@@ -110,15 +110,6 @@
   position: relative;
   left: 10vw;
 }
-.class-filter ul {
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
 .class-filter ul > li > button {
   width: 5.31rem;
   height: 2rem;
@@ -133,17 +124,7 @@
   border-color: transparent;
 }
 
-.main-content {
-  display: grid;
-  gap: var(--gap-1);
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  justify-content: center;
-}
 
-.wrapper {
-  display: flex;
-  margin: 0px var(--margin-1) 0px var(--margin-1);
-}
 
 /* aside.index-aside {
     width: 25%;
@@ -169,12 +150,7 @@
     font-weight: var(--bold);
     margin-top: 4px;
   } */
-main.index-main {
-  width: 75%;
-  background: var(--color-background);
-  display: flex;
-  flex-direction: column;
-}
+
 
 main {
   margin-top: 10.4375rem;
@@ -215,20 +191,7 @@ main {
     margin: 0;
   }
 
-  .main-content {
-    margin: 0 1.5rem;
-    display: grid;
-    gap: 0.75rem;
-    grid-template-columns: repeat(auto-fill, minmax(9.8rem, 1fr));
-    justify-content: center;
-  }
-  .class-filter ul {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
+
 
   .class-filter ul > li > button {
     width: 4.625rem;
@@ -393,11 +356,20 @@ main {
 .tsag-list.open {
   display: grid;
 }
-.open-flex {
-  display: flex;
-}
 
 .tsag-active > button {
   background: var(--color-primary) !important;
   color: var(--color-white);
+}
+
+.class-section-1{
+  width: 17rem;
+  flex-wrap: wrap;
+  & h3{
+    flex-wrap: wrap;
+
+  }
+}
+.class-type{
+  padding-top: 0.7rem;
 }
