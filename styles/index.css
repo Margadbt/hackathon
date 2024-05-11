@@ -265,12 +265,12 @@ main {
   fill: black;
 }
 
-@keyframes nav-animation {
+/* @keyframes nav-animation {
   100% {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-}
+} */
 
 /* ------------------------POP- UPS------------------------ */
 

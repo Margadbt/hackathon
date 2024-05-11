@@ -8,7 +8,7 @@ function EventForm() {
     const [when, setWhen] = useState("");
     const [where, setWhere] = useState("");
     const [description, setDescription] = useState("");
-    const [orginization, setOrginization] = useState("");
+    const [organization, setOrginization] = useState("");
 
 
     const handleImageChange = (e) => {
@@ -24,7 +24,7 @@ function EventForm() {
             "location": where,
             "description": description,
             "image_url": "oyuna",
-            "orginization":"orginization"
+            "organization": organization
         };
         async function postRequest(data){
             const response = await fetch("/api/event/create", {
@@ -76,9 +76,9 @@ function EventForm() {
                          <label htmlFor="Bname1">Зохиож буй байгууллагын нэр</label>
                         <textarea
                             className="form-attr"
-                            id="Bname1"
-                            name="Bname1"
-                            value={name}
+                            id="orginization1"
+                            name="orginization1"
+                            value={organization}
                             onChange={(e) => setOrginization(e.target.value)}
                             cols="50"
                             rows="10"
