@@ -1,5 +1,6 @@
 import "./style.css";
 
+
 const ProfileRoomCard = () => {
     return (
         <article className="class-section-2">
