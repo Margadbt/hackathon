@@ -13,6 +13,7 @@ const EventCard = () => {
           <div className="event-font">
             <h3>Event Name</h3>
             <div className="event-class-type">event </div>
+            <div className="event-class-type">Description </div>
           </div>
         </div>
         <div className="event-para">
