@@ -1,7 +1,8 @@
+"use client"
 import { useState } from 'react';
 import "./style.css";
 
-function ReserveForm() {
+function RequestForm() {
     const [purpose, setPurpose] = useState("клуб");
     const [description, setDescription] = useState("");
     const [people, setPeople] = useState(2);
@@ -14,6 +15,7 @@ function ReserveForm() {
     };
 
     return (
+        <div className="all">
         <form onSubmit={handleSubmit}>
             <ul>
                 <li>
@@ -94,9 +96,10 @@ function ReserveForm() {
                     </li>
                 </ul>
             </ul>
-            <button className="submit button" type="submit">Захиалах</button>
+            <button className="submit-button" type="submit">Захиалах</button>
         </form>
+        </div>
     );
 }
 
-export default ReserveForm;
+export default RequestForm;
