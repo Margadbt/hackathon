@@ -1,13 +1,18 @@
 import "@/app/app.style.css";
 import RoomCard from "@/components/RoomCard";
 import "@/styles/index.css";
+<<<<<<< Updated upstream
+=======
+import "@/app/app.style.css";
+import SearchBar from "@/components/SearchBar";
+>>>>>>> Stashed changes
 
 export default function Home() {
   return (
     <main>
       <div class="app-main-wrapper">
         <div class="left-side">
-          <div class="filter-bar"></div>
+          <SearchBar class="app-search-bar"></SearchBar>
           <div class="main-content">
             <RoomCard></RoomCard>
             <RoomCard></RoomCard>
