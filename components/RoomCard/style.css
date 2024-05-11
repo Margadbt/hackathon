@@ -1,53 +1,55 @@
-.class-section-2{
-    gap: 2px;
-    border-style: solid;
-    border-width: 1px;
-    overflow: hidden;
-    border-radius: 1rem;
-    height: 100%;
+.class-section-1 > article {
+    display: flex;
+    /* width: 18.75rem; */
+    background: var(--color-background);
+    position: relative;
+    border-radius: 20px;
+    /* border: 3px solid; */
+    /* border-color: var(--color-border); */
+}
+.class-section-1 .head-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.class-section-1 .image {
+    width: 50%;
+
+    border-radius: 20px 0 0 20px;
+    /* border-color: var(--color-border); */
+}
+.class-section-1 .heart-grey {
+    width: 1.3rem;
+    right: 0.8em;
+}
+.class-section-1 .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0.8em;
     width: 100%;
-    display: grid;
-    grid-template-columns: 50% 30% 10%;
-
-    & .img{
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 10px 0px 0px 10px ;
-        }
-    }
-    & .details{
-        & .heartdetailsgrid{
-            display: grid;
-            grid-template-columns: 90% 10%;
-            margin: 0.5rem;
-        }
-        & button{
-            border-radius: 1rem;
-            border-style: solid;
-            border-width: 0.5px;
-            padding: 0.1rem 1rem;
-        }
-        & ul{
-            margin-left: 1rem;
-            & li{
-                padding-top: 0.2rem;
-            }
-        }
-    }
-    & .cancel{
-        & button{
-            margin-left: 1rem;
-            width: 150%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #D46A6A;
-            & img{
-                height: 94%;
-                width: 100%;
-                border-radius:0px 10px 10px 0px ;
-            }
-        }
-
-    }
+}
+.class-section-1 h3 {
+    font-weight: var(--semi-bold);
+    font-size: var(--medium-size);
+    line-height: var(--line-height-4);
+    color: var(--color-text);
+    white-space: nowrap;
+}
+.class-section-1 .class-type {
+    margin-top: -0.5em;
+    font-weight: var(--medium);
+    font-size: var(--tiny);
+    line-height: var(--line-height-4);
+    color: var(--color-light-grey);
+    white-space: nowrap;
+}
+.class-section-1 .class-info {
+    display: flex;
+}
+.class-section-1 .class-info {
+    gap: 1em;
+    margin-top: 1.2em;
+    font-weight: var(--medium);
+    font-size: var(--small);
+    color: var(--color-light-grey);
 }
