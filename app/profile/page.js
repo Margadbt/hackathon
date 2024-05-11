@@ -7,7 +7,6 @@ export default function Home() {
     <main class="body">
       <div class="profile-wrapper">
         <div class="left-side">
-          <img src="profileImg" alt="profile-icon" />
           <p>User0021</p>
         </div>
         <div class="right-side">
