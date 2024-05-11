@@ -1,0 +1,80 @@
+.reserve-form {
+    background: var(--color-background);
+    box-shadow: var(--shadow-2);
+    border-radius: 30px;
+    width: 21rem;
+    height: auto;
+}
+
+.reserve-form>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 3em;
+    gap: 0.5em;
+}
+
+.reserve-form>ul>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "people phone1"
+        " . phone2";
+    justify-content: space-between;
+}
+
+.phone-number1 {
+    grid-area: phone1;
+}
+
+.phone-number2 {
+    grid-area: phone2;
+}
+
+.people {
+    grid-area: people;
+}
+
+input[type=number] {
+    width: 4em;
+}
+
+input[type=tel] {
+    width: 8.2em;
+}
+
+textarea {
+    resize: none;
+}
+
+.reserve-form label {
+    color: var(--color-light-text);
+    font-size: var(--tiny);
+    font-weight: var(--normal);
+    margin-bottom: 0.5em;
+}
+
+.form-attr {
+    background: var(--color-background);
+    box-shadow: var(--shadow-2);
+    font-size: var(--regular);
+    font-weight: var(--medium);
+    color: var(--color-light-text);
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.form-attr:focus {
+    outline: 0.5px solid var(--color-border);
+}
+
+.submit {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+label {
+    color: var(--color-text);
+}

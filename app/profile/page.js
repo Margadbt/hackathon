@@ -1,14 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import "@/app/profile/style.css";
 import ProfileRoomCard from "@/components/ProfileRoomCard";
 
 export default function Home() {
   return (
     <main class="body">
       <div class="profile-wrapper">
-        <div></div>
-        <div>
+        <div class="left-side"></div>
+        <div class="right-side">
           <section class="verified">
+            <h2>Баталгаажсан :</h2>
             <div class="card-wrapper">
               <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
@@ -16,7 +18,9 @@ export default function Home() {
             </div>
           </section>
           <section class="waiting">
+            <h2>Хүлээгдэж буй :</h2>
             <div class="card-wrapper">
+              <ProfileRoomCard></ProfileRoomCard>
               <ProfileRoomCard></ProfileRoomCard>
             </div>
           </section>
