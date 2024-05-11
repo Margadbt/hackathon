@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import RoomCartComponent from "@/app/RoomCartComponent";
+import RoomCard from "@/components/RoomCard";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -40,12 +40,7 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <RoomCartComponent></RoomCartComponent>
-        <RoomCartComponent></RoomCartComponent>
-        <RoomCartComponent></RoomCartComponent>
-        <RoomCartComponent></RoomCartComponent>
-        <RoomCartComponent></RoomCartComponent>
-        <RoomCartComponent></RoomCartComponent>
+        <RoomCard></RoomCard>
 
       </div>
     </main>
