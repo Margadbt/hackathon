@@ -1,6 +1,7 @@
+import "./style.css"
 export default function Detail() {
     return (
-      <div>
+      <div className="event-detail-card">
         <p>Дэлгэрэнгүй</p>
         <div>
             <p>Оюутны тоо:</p>
