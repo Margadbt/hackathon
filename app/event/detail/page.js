@@ -1,6 +1,4 @@
-import classRoom from "@/assets/hackum.jpg";
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classRoom from "@/assets/rooms.jpg";
 import Image from 'next/image';
 import "./style.css"; // Import CSS file
 import Detail from '/components/EventDetailCard';
@@ -14,7 +12,6 @@ const EventDetailPage = () => {
             <div className="font">
               <b><h2>Hackathon-Hackum </h2></b>
               <div className="class-type">
-                <FontAwesomeIcon icon={faCircle} style={{ width: '15px' }} /> Hackum {/* Render FontAwesomeIcon */}
               </div>
             </div>
           </div>
