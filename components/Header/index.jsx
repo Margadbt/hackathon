@@ -19,8 +19,14 @@ const Index = () => {
         className="hero-image"
       />
       <nav>
-        <Link href="#" className="header-logo">
+        <Link href={""} className="header-logo">
           <img className="logo" src="#" />
+        </Link>
+        <Link href={""} className="header-logo">
+         <div>Home</div>
+        </Link>
+         <Link href={""} className="header-logo">
+          <div>Event</div>
         </Link>
         <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>
           <i className="fa-regular fa-user"></i>

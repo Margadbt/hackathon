@@ -1,4 +1,42 @@
-.card-wrapper {
+html,
+body {
+  display: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+.profile-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: 20% 80%;
+
+  width: 80%;
+
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+
+  padding: 2em;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+/* .verified,
+.waiting {
+  display: flex;
+  flex-direction: column;
+} */
+.card-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.6rem, 1fr));
+
+  gap: 1.5em;
 }
