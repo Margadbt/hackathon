@@ -1,13 +1,11 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
-import Link from "next/link";
-import UserPopUp from "./UserPopUp";
-import Image from "next/image";
-import logo from "@/assets/Logo.svg";
-import NavbarProfile from "@/assets/Navbar-profile.svg";
-import "@/styles/styles.css";
-
+import React, { useState } from 'react';
+import Link from 'next/link';
+import UserPopUp from './UserPopUp';
+import Image from 'next/image';
+import logo from "@/assets/Logo.svg"
+import "@/styles/styles.css"
 const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
@@ -17,6 +15,7 @@ const Header = () => {
 
   return (
     <div className="main-header">
+     
       <nav>
         <div className="wrapper-wrap">
           <a href={"/"} className="header-logo">
@@ -32,7 +31,7 @@ const Header = () => {
           </div>
         </div>
         <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>
-          <Image src={NavbarProfile} alt="Profile" className="user-logo" />
+          <i className="fa-regular fa-user"></i>
         </button>
         {isPopUpVisible && <UserPopUp />}
       </nav>

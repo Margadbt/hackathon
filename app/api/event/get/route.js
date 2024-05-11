@@ -7,13 +7,16 @@ export async function GET(req, res) {
     try {
       const eventCollection = collection(db, "event");
 
+      // Retrieve all documents from the 'event' collection
       const querySnapshot = await getDocs(eventCollection);
 
+      // Extract data from each document
       const eventData = [];
       querySnapshot.forEach((doc) => {
-        eventData.push({ id: doc.id, ...doc.data() });
+        eventData.push(doc.data());
       });
 
+      // Return the array of event data as JSON response
       return new Response(JSON.stringify(eventData), {
         status: 200,
         headers: {
