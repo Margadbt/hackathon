@@ -8,6 +8,8 @@ function EventForm() {
     const [when, setWhen] = useState("");
     const [where, setWhere] = useState("");
     const [description, setDescription] = useState("");
+    const [orginization, setOrginization] = useState("");
+
 
     const handleImageChange = (e) => {
         const file = e.target.files[0];
@@ -21,7 +23,8 @@ function EventForm() {
             "date": when,
             "location": where,
             "description": description,
-            "image_url": "oyuna"
+            "image_url": "oyuna",
+            "orginization":"orginization"
         };
         async function postRequest(data){
             const response = await fetch("/api/event/create", {
@@ -66,6 +69,17 @@ function EventForm() {
                             name="name1"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
+                            cols="50"
+                            rows="10"
+                            required
+                        ></textarea>
+                         <label htmlFor="Bname1">Зохиож буй байгууллагын нэр</label>
+                        <textarea
+                            className="form-attr"
+                            id="Bname1"
+                            name="Bname1"
+                            value={name}
+                            onChange={(e) => setOrginization(e.target.value)}
                             cols="50"
                             rows="10"
                             required
