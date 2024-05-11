@@ -1,7 +1,18 @@
 export default function Detail() {
     return (
       <main>
-        <h1>hi</h1>
+        <div>
+            <p>Hackathon bla bla</p>
+            <div>
+                {/* image */}
+                <p>Hackum клуб</p>
+            </div>
+        </div>
+
+        <div>
+            {/* image */}
+            
+        </div>
       </main>
     );
   }
