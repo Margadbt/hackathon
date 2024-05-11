@@ -7,6 +7,7 @@ import Calendar from "react-calendar";
 import Image from "next/image";
 import rooms from "../../assets/rooms.jpg"
 import RoomCard from "@/components/RoomCard";
+import AvailableTimeSection from "@/components/AvailableTimeSection";
 import "react-calendar/dist/Calendar.css";
 
 export default function Room() {
