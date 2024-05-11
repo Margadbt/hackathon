@@ -1,5 +1,5 @@
 import "./style.css"
-export default function Detail() {
+export default function EventDetailCard() {
     return (
       <div className="event-detail-card">
         <p>Дэлгэрэнгүй</p>
