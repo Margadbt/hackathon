@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 
 import classImage from "@/assets/rooms.jpg";
-import "@/styles/user.css"
+import "./style.css"
 
 const EventCard = () => {
   return (
     <article className="class-section-2">
       <div className="img">
-        <Image src={classImage} alt="classroom picture" width={300} height={200} />
+        <Image src={classImage} alt="classroom picture" className='img' />
       </div>
       <section className="details">
         <div className="heartdetailsgrid">
