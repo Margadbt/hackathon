@@ -22,10 +22,10 @@ const Index = () => {
         <Link href={""} className="header-logo">
           <img className="logo" src="#" />
         </Link>
-        <Link href={""} className="header-logo">
+        <Link href={""} >
          <div>Home</div>
         </Link>
-         <Link href={""} className="header-logo">
+         <Link href={""} >
           <div>Event</div>
         </Link>
         <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>
