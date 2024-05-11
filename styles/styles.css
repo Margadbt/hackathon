@@ -59,7 +59,7 @@ class-section:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 1000;
   background-color: var(--color-background);
   box-shadow: var(--shadow-1);
 }
@@ -76,7 +76,7 @@ class-section:hover {
 .main-header-2 {
   position: sticky;
   top: 0;
-  z-index: 4;
+  z-index: 1000;
   background: var(--color-background);
   box-shadow: var(--shadow-2);
 }
@@ -231,7 +231,8 @@ class-section:hover {
   display: flex;
   flex-direction: column;
   margin: 1em 0.8em;
-  width: 100%;
+  width: 10rem;
+
 }
 .class-section-1 h3 {
   font-weight: var(--semi-bold);

@@ -26,6 +26,7 @@ html {
   border-color: var(--color-border);
   transition: all 0.2s ease-out;
   box-shadow: var(--shadow-1);
+
 }
 .class-section-1:hover {
   border-color: rgba(42, 71, 28, 0.8);
@@ -52,11 +53,13 @@ html {
   flex-direction: column;
   align-items: flex-start;
   margin: 1em 0.8em;
-  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip ;
 }
 .class-section-1 h3 {
-  font-weight: var(--semi-bold);
-  font-size: var(--medium-size);
+  font-weight: 300;
+  font-size: 10px;
   line-height: var(--line-height-4);
   color: var(--color-text);
   white-space: nowrap;
@@ -73,7 +76,6 @@ html {
   display: flex;
 }
 .class-section-1 .class-info {
-  gap: 1em;
   margin-top: 1.2em;
   font-weight: var(--medium);
   font-size: var(--small);
@@ -123,7 +125,7 @@ header{
   overflow: hidden;
   border-radius: 1rem;
   height: 100%;
-  width: 20rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -169,7 +171,7 @@ header{
 }
 .font h3 {
   font-weight: var(--bold);
-  font-size: var(--medium-size);
+  font-size: 20px;
   line-height: var(--line-height-4);
   color: var(--color-text);
   white-space: nowrap;
@@ -181,7 +183,7 @@ header{
   font-size: var(--tiny);
   line-height: var(--line-height-4);
   color: var(--color-light-grey);
-  white-space: nowrap;
+
 }
 
 .right-section {
@@ -228,4 +230,11 @@ header{
 .username {
   color: var(--color-text);
   font-weight: var(--semi-bold);
+}
+.RoomCard-container{
+  margin: 0 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem,1fr));
+  justify-content: center;
 }

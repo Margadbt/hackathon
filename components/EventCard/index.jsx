@@ -10,7 +10,7 @@ const EventCard = ({data}) => {
   return (
     <article className="event-section">
       <div className="img">
-        <Image src={data.image_url} alt="classroom picture" />
+        <Image src={classImage} alt="classroom picture" />
       </div>
       <section className="event-details">
         <div className="heartdetailsgrid">

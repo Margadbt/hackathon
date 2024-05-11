@@ -3,9 +3,9 @@ export default function EventDetailCard() {
     return (
       <div className="main">
         <p>Дэлгэрэнгүй</p>
+        <p></p>
         <div className="studentNumber">
-            <p>Оюутны тоо:</p>
-            <p className="num">20</p>
+           
         </div>
         <div >
             <p>Хаана:</p>
