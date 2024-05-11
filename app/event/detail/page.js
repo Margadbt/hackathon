@@ -4,7 +4,7 @@ export default function EventDetail() {
         <div>
             <p>Hackathon bla bla</p>
             <div>
-                {/* image */}
+                <img scr={assest('./cancal.png')}/>
                 <p>Hackum клуб</p>
             </div>
         </div>
