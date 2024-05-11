@@ -11,11 +11,14 @@ function RequestForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(purpose)
-    console.log(description)
-    console.log(people)
-    console.log(phoneNumber1)
-    console.log(phoneNumber2)
+    const data = {
+      purpose: purpose,
+      description: description,
+      people: people,
+      phone_number_one: phoneNumber1,
+      phone_number_two: phoneNumber2
+    }
+    console.log(data)
   };
 
 
