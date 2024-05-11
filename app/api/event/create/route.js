@@ -10,12 +10,12 @@ export async function POST(req, res) {
       const eventCollection = collection(db, "event");
 
       await addDoc(eventCollection, {
-        event_id: uuidv4(),
         date: postData.date,
         description: postData.description,
         image_url: postData.image_url,
         location: postData.location,
-        name: postData.name
+        name: postData.name,
+        organization: postData.organization
       })
 
       

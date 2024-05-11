@@ -8,6 +8,8 @@ function EventForm() {
     const [when, setWhen] = useState("");
     const [where, setWhere] = useState("");
     const [description, setDescription] = useState("");
+    const [orginization, setOrginization] = useState("");
+
 
     const handleImageChange = (e) => {
         const file = e.target.files[0];
@@ -17,13 +19,27 @@ function EventForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = {
-            name: name,
-            when: when,
-            where: where,
-            description: description,
-            image: image
+            "name": name,
+            "date": when,
+            "location": where,
+            "description": description,
+            "image_url": "oyuna",
+            "orginization":"orginization"
         };
-        console.log(data);
+        async function postRequest(data){
+            const response = await fetch("/api/event/create", {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                  
+                },
+                body: JSON.stringify(data)
+              });
+              return response
+        }
+        
+        console.log(postRequest(data))
+
     };
 
     return (
@@ -53,6 +69,17 @@ function EventForm() {
                             name="name1"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
+                            cols="50"
+                            rows="10"
+                            required
+                        ></textarea>
+                         <label htmlFor="Bname1">Зохиож буй байгууллагын нэр</label>
+                        <textarea
+                            className="form-attr"
+                            id="Bname1"
+                            name="Bname1"
+                            value={name}
+                            onChange={(e) => setOrginization(e.target.value)}
                             cols="50"
                             rows="10"
                             required
