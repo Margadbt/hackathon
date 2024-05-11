@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header"
-
+import Header from "../components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header></Header>
-        {children}
-        </body>
+        <div style={{margin: "6rem 6rem 0 6rem"}}>{children}</div>
+      </body>
     </html>
   );
 }

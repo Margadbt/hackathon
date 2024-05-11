@@ -1,4 +1,4 @@
-export default function Detail() {
+export default function EventDetail() {
     return (
       <main>
         <div>
