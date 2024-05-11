@@ -63,7 +63,10 @@
   --margin-1: 6rem;
 }
 
-@media (prefers-color-scheme: dark) {
+body{
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-text: rgb(255, 255, 255);
     --color-background: rgba(0, 0, 0, 1);
@@ -74,7 +77,7 @@
     --shadow-2: 0 2px 10px rgba(255, 255, 255, 0.15);
     --shadow-3: 0 4px 15px rgba(255, 255, 255, 0.35);
   }
-}
+} */
 
 .heading-1 {
   font-size: var(--heading-1);
@@ -106,5 +109,3 @@
   font-weight: var(--bold);
   line-height: var(--line-height-3);
 }
-
-

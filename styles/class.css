@@ -101,7 +101,7 @@
     margin-bottom: 0.4em;
  }
  .rate::before, .rate::after, .rate-title-p::before, .rate-title-p::after{
-    content: url("assets/Star-2.svg");
+    content: url("../assets/Check.svg");
     margin-top: 0.2em;
     margin-right: 0.1em;
     fill: var(--color-accent);
@@ -442,7 +442,7 @@
    color: var(--color-light-text);
  }
  .star::before{
-   content: url("assets/Star.svg");
+   content: url("../assets/Check.svg");
    fill: var(--color-primary);
  } 
  .star-wid input{

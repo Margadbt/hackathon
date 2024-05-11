@@ -1,9 +1,12 @@
 "use client"
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import UserPopUp from './UserPopUp';
-
-const Index = () => {
+import Image from 'next/image';
+import logo from "@/assets/Logo.svg"
+import "@/styles/styles.css"
+const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
   const togglePopUp = () => {
@@ -12,14 +15,14 @@ const Index = () => {
 
   return (
     <div className="main-header">
-      <img
-        src="#"
+     
+      <nav>
+        <Link href={""} className="header-logo">
+        <Image
+        src={logo}
         alt="classroom-picture"
         className="hero-image"
       />
-      <nav>
-        <Link href={""} className="header-logo">
-          <img className="logo" src="#" />
         </Link>
         <Link href={""} >
          <div>Home</div>
@@ -36,4 +39,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Header;

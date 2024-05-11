@@ -1,4 +1,4 @@
-@import url(styleguide.css);
+
 
 html,
 body,
@@ -70,7 +70,7 @@ class-section:hover {
   display: flex;
   flex-wrap: nowrap;
 
-  margin: 2.875rem 6rem;
+  padding: 1rem 6rem;
 
   justify-content: space-around;
   align-items: center;
@@ -263,7 +263,7 @@ class-section:hover {
 .seat-count::before {
   /* position: relative; */
   top: 0.3rem;
-  content: url("assets/Seat-logo.svg");
+  content: url("../assets/Seat-logo.svg");
   width: 0.9rem;
   height: 1.4rem;
   margin-right: 5px;
@@ -276,10 +276,10 @@ class-section:hover {
   margin-right: 5px;
 }
 .proj-off::before {
-  content: url("assets/Projector-off.svg");
+  content: url("../assets/Projector-off.svg");
 }
 .proj-on::before {
-  content: url("assets/Projector.svg");
+  content: url("../assets/Projector.svg");
 }
 #profile-btn {
   background: var(--color-background);
