@@ -22,7 +22,6 @@ const EventCard = ({data}) => {
         <div className="event-para">
           <p>{data.location}</p>
           <p>{data.date}</p>
-          {/* daskdjaslknd */}
         </div>
       </section>
     </article>
