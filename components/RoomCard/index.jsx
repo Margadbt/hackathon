@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.css"
 import "../../public/All.css"
 
-const EventCard = ({ data, index }) => {
+const RoomCard = ({ data, index }) => {
     // Encode data for URL
     const encodedData = encodeURIComponent(JSON.stringify(data));
 
@@ -49,4 +49,4 @@ const EventCard = ({ data, index }) => {
     );
 };
 
-export default EventCard;
+export default RoomCard;
