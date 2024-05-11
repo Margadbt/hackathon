@@ -1,5 +1,6 @@
 import { db } from '../../../firebase'; 
 import { doc, setDoc, collection, addDoc } from 'firebase/firestore';
+import {v4 as uuidv4} from 'uuid'
 
 export async function POST(req, res) {
   if (req.method === 'POST') {
@@ -9,6 +10,7 @@ export async function POST(req, res) {
       const eventCollection = collection(db, "event");
 
       await addDoc(eventCollection, {
+        event_id: uuidv4(),
         date: postData.date,
         description: postData.description,
         image_url: postData.image_url,
