@@ -1,9 +1,9 @@
-import "@/styles/styles.css";
-import "@/components/SearchBar/button.js";
-import Image from "next/image";
 import HorLine from "@/assets/Line.svg";
 import SearchIcon from "@/assets/Search-button.svg";
-import "@/app/script/FreeAngi.js";
+import "@/components/SearchBar/bairlist.js";
+import "@/styles/styles.css";
+import Image from "next/image";
+
 
 const SearchBar = () => {
   return (
