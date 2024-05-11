@@ -1,11 +1,8 @@
 import "@/app/app.style.css";
 import RoomCard from "@/components/RoomCard";
 import "@/styles/index.css";
-<<<<<<< Updated upstream
-=======
 import "@/app/app.style.css";
 import SearchBar from "@/components/SearchBar";
->>>>>>> Stashed changes
 
 export default function Home() {
   return (
