@@ -1,72 +1,26 @@
 import HorLine from "@/assets/Line.svg";
 import SearchIcon from "@/assets/Search-button.svg";
-import "@/components/SearchBar/bairlist.js";
+import SearchBarBairList from "../SearchBarBairList";
 import "@/styles/styles.css";
 import Image from "next/image";
-
+import React, { useState } from "react";
 
 const SearchBar = () => {
+  const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+  const togglePopUp = () => {
+    setIsPopUpVisible(!isPopUpVisible);
+  };
+
   return (
     <nav>
-      <ul class="search-bar">
-        <li class="bair">
-          <button id="bair-button">
-            <span>Хичээлийн байр</span>
-            <span class="light-grey" id="bair-info">
-              2-р байр
-            </span>
-          </button>
-          <ul class="bair-list" id="bair-list">
-            <li>
-              <button id="bair-1">
-                <img src="" alt="search" />
-              </button>
-              <span>1-р байр</span>
-            </li>
-            <li>
-              <button id="bair-2">
-                <img src="" alt="search" />
-              </button>
-              <span>2-р байр</span>
-            </li>
-            <li>
-              <button id="bair-4">
-                <img src="" alt="search" />
-              </button>
-              <span>4-р байр</span>
-            </li>
-            <li>
-              <button id="bair-5">
-                <img src="" alt="search" />
-              </button>
-              <span>5-р байр</span>
-            </li>
-            <li>
-              <button id="bair-7">
-                <img src="" alt="search" />
-              </button>
-              <span>7-р байр</span>
-            </li>
-            <li>
-              <button id="bair-8">
-                <img src="" alt="search" />
-              </button>
-              <span>8-р байр</span>
-            </li>
-            <li>
-              <button id="bair-e-lib">
-                <img src="" alt="search" />
-              </button>
-              <span>E-Lib</span>
-            </li>
-            <li>
-              <button id="bair-huuli">
-                <img src="" alt="search" />
-              </button>
-              <span>Хууль зүй</span>
-            </li>
-          </ul>
-        </li>
+      <div class="search-bar">
+        <button id="bair-button" onClick={togglePopUp}>
+          <span>Хичээлийн байр</span>
+          <span class="light-grey" id="bair-info">
+            2-р байр
+          </span>
+        </button>
+        {isPopUpVisible && <SearchBarBairList></SearchBarBairList>}
         <Image src={HorLine} alt="line" />
         <li class="odor">
           <button id="calendar-button">
@@ -178,7 +132,7 @@ const SearchBar = () => {
             <Image src={SearchIcon} alt="Search" />
           </button>
         </li>
-      </ul>
+      </div>
     </nav>
   );
 };
