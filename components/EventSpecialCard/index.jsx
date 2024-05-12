@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css";
 
-const RoomCard = ({ room }) => {
+const EventSpecialCard = ({data}) => {
   // Random image for the classroom
   let i = Math.floor(Math.random() * 10000) + 1;
 
@@ -15,18 +15,14 @@ const RoomCard = ({ room }) => {
           />
           <div className="text-wrapper">
             <div className="head-wrapper">
-              {/* Display classroom number dynamically */}
-              <h3>{room.khicheeliin_bair} {room.uruunii_dugaar}</h3>
+              <h3>{data.name}</h3>
             </div>
             {/* Display class type (зориулалт) dynamically */}
-            <div className="class-type">{room.uruunii_zoriulalt}</div>
+            <div className="class-type">{data.organization}</div>
             <div className="class-info">
-              <div className="seat-count">{room.suudlyn_too}</div>
-              {/* Display seat count dynamically */}
-              <div className="class_size">{room.talbain_khemjee}</div>
+              <div className="seat-count">{data.location}</div>
+                <div className="class_size">{data.date}</div>
               <div className="projector">
-                {/* Display projector availability dynamically */}
-                <div className={`projector ${room.proyektortoi_esekh === "Проекторгүй" ? "proj-off" : "proj-on"}`}></div>
               </div>
             </div>
           </div>
@@ -35,4 +31,4 @@ const RoomCard = ({ room }) => {
   );
 };
 
-export default RoomCard;
+export default EventSpecialCard;
