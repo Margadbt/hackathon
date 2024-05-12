@@ -1,4 +1,4 @@
-import { db } from '@/app/firebase'; 
+import { db } from '../../../..//firebase'; 
 import { doc, setDoc, collection, addDoc } from 'firebase/firestore';
 
 export async function POST(req, res) {
@@ -16,6 +16,7 @@ export async function POST(req, res) {
         phone_num_two: postData.phone_num_two,
         purpose: postData.purpose,
         room: postData.room,
+        status: "pending"
 
       })
 
