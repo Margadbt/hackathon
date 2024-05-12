@@ -9,16 +9,13 @@ const UserPopUp = () => {
     <div className="pop-up" id="user-popup" >
     <ul>
       <li>
-        <a href="user.html" className="button">Нэвтрэх</a>
+        <Link href={"/login"} className="button">Нэвтрэх</Link>
       </li>
       <li>
-        <a href="user.html" className="reserved-menu menu"><span>Захиалсан ангиуд</span></a>
+        <Link href={"/login"}  className="reserved-menu menu"><span>Захиалсан ангиуд</span></Link>
       </li>
       <li>
-        <a href="user.html" className="liked-menu menu"><span>Дуртай ангиуд</span></a>
-      </li>
-      <li>
-        <a href="contact.html" className="contact-menu menu"><span>Холбогдох</span></a>
+        <Link href={"/login"}  className="contact-menu menu"><span>Холбогдох</span></Link>
       </li>
     </ul>
     </div>

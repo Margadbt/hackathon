@@ -46,7 +46,10 @@
     flex-basis: 100px;
     text-align: right;
 }
-
+.more-btn{
+    background-color: white;
+    font-size: 20px;
+}
 .approve, .reject {
     font-size: 16px;
     border: none;
@@ -61,4 +64,15 @@
 
 .reject {
     color: #F44336;
+}
+.popup-status{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%;
+    border-radius: 20px;
+    color: #333;
+    padding: 1rem;
 }

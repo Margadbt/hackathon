@@ -1,6 +1,6 @@
 
 "use client";
-import RequestedEventClass from "@/components/RequestedEventClass";
+import RequestedEventClass from "../../components/RequestedEventClass";
 import './style.css';
 import {useEffect, useState} from "react";
 
