@@ -52,7 +52,7 @@ const SearchBar = () => {
   }, [location, date, time]);
 
   const SearchBarFunction = () => {
-    const [FilterData, setFilteredData] = useState([]);
+    // const [FilterData, setFilteredData] = useState([]);
 
     const FixedTime = time.toString().substring(0, 2);
     console.log(
@@ -181,7 +181,7 @@ const SearchBar = () => {
         <Image src={HorLine} alt="line" />
         <li className="tsag">
           <button>
-            <span>Өдөр</span>
+            <span>Цаг</span>
             <span className="light-grey" id="bair-info">
               <select
                 className="light-grey selector"
@@ -207,62 +207,6 @@ const SearchBar = () => {
               </select>
             </span>
           </button>
-          <ul class="tsag-list" id="tsag-list">
-            <li>
-              <button>07:40</button>
-            </li>
-            <li>
-              <button>08:25</button>
-            </li>
-            <li>
-              <button>09:20</button>
-            </li>
-            <li>
-              <button>10:05</button>
-            </li>
-            <li>
-              <button>11:00</button>
-            </li>
-            <li>
-              <button>11:45</button>
-            </li>
-            <li>
-              <button>12:40</button>
-            </li>
-            <li>
-              <button>13:25</button>
-            </li>
-            <li>
-              <button>14:20</button>
-            </li>
-            <li>
-              <button>15:05</button>
-            </li>
-            <li>
-              <button>16:00</button>
-            </li>
-            <li>
-              <button>16:45</button>
-            </li>
-            <li>
-              <button>17:40</button>
-            </li>
-            <li>
-              <button>18:25</button>
-            </li>
-            <li>
-              <button>19:20</button>
-            </li>
-            <li>
-              <button>20:05</button>
-            </li>
-            <li>
-              <button>21:00</button>
-            </li>
-            <li>
-              <button>21:45</button>
-            </li>
-          </ul>
         </li>
         <li className="search-button-background" id="search">
           <button onClick={SearchBarFunction} className="search-button">
