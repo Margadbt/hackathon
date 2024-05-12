@@ -73,8 +73,7 @@
     white-space: nowrap;
   }
   .class-section-1 .class-info {
-    display: flex;
-    flex-direction: column;
+    
   }
   .class-section-1 .class-info {
     margin-top: 1.2em;

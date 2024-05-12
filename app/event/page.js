@@ -15,6 +15,7 @@ export default function EventPage() {
       try {
         const response = await fetch("/api/event/get");
         const jsonData = await response.json();
+        console.log(jsonData);
         setAllEventData(jsonData);
       } catch (error) {
         console.log(error);

@@ -1,6 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
-import { fetching } from "../../app/script/FreeAngi";
+import "@/app/script/FreeAngi.js";
 import HorLine from "@/assets/Line.svg";
 import SearchIcon from "@/assets/Search-button.svg";
 import Image from "next/image";
@@ -104,12 +103,14 @@ const SearchBar = () => {
     <nav>
       <div className="search-bar">
         <li className="bair">
-          <button>
+          <button id="bair-button" onClick={togglePopUp}>
             <span>Хичээлийн байр</span>
             <span className="light-grey" id="bair-info">
               <select
                 className="light-grey selector"
-                onChange={(e) => setLocation(e.target.value)}
+                name=""
+                id=""
+                onChange={(e) => setBair(e.target.value)}
               >
                 <option>1-р байр</option>
                 <option>2-р байр</option>
@@ -122,6 +123,7 @@ const SearchBar = () => {
               </select>
             </span>
           </button>
+          {isPopUpVisible && <SearchBarBairList></SearchBarBairList>}
         </li>
         <Image src={HorLine} alt="line" />
         <li className="odor">
@@ -142,11 +144,43 @@ const SearchBar = () => {
               </select>
             </span>
           </button>
+          <div class="calendar-box" id="calendar-list">
+            <ul class="button-list">
+              <li>
+                <button>1 өдөр</button>
+              </li>
+              <li>
+                <button>7 хоног</button>
+              </li>
+              <li>
+                <button>2-7 хоног</button>
+              </li>
+            </ul>
+            <div class="calendar-wrapper">
+              <div class="calendar-icons">
+                <span id="prev">&#8249;</span>
+                <p class="current-date"></p>
+                <span id="next">&#8250;</span>
+              </div>
+              <div class="calendar">
+                <ul class="weeks">
+                  <li>Sun</li>
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thu</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+                </ul>
+                <ul class="days"></ul>
+              </div>
+            </div>
+          </div>
         </li>
         <Image src={HorLine} alt="line" />
         <li className="tsag">
           <button>
-            <span>Цаг</span>
+            <span>Өдөр</span>
             <span className="light-grey" id="bair-info">
               <select
                 className="light-grey selector"
@@ -172,6 +206,62 @@ const SearchBar = () => {
               </select>
             </span>
           </button>
+          <ul class="tsag-list" id="tsag-list">
+            <li>
+              <button>07:40</button>
+            </li>
+            <li>
+              <button>08:25</button>
+            </li>
+            <li>
+              <button>09:20</button>
+            </li>
+            <li>
+              <button>10:05</button>
+            </li>
+            <li>
+              <button>11:00</button>
+            </li>
+            <li>
+              <button>11:45</button>
+            </li>
+            <li>
+              <button>12:40</button>
+            </li>
+            <li>
+              <button>13:25</button>
+            </li>
+            <li>
+              <button>14:20</button>
+            </li>
+            <li>
+              <button>15:05</button>
+            </li>
+            <li>
+              <button>16:00</button>
+            </li>
+            <li>
+              <button>16:45</button>
+            </li>
+            <li>
+              <button>17:40</button>
+            </li>
+            <li>
+              <button>18:25</button>
+            </li>
+            <li>
+              <button>19:20</button>
+            </li>
+            <li>
+              <button>20:05</button>
+            </li>
+            <li>
+              <button>21:00</button>
+            </li>
+            <li>
+              <button>21:45</button>
+            </li>
+          </ul>
         </li>
         <li className="search-button-background" id="search">
           <button onClick={SearchBarFunction} className="search-button">
