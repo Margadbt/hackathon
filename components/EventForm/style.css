@@ -1,102 +1,109 @@
 .request-form-card {
-    background-color: white;
-    box-shadow: var(--shadow-1);
-    padding: 55px;
-    border-radius: 20px;
-    grid-column: 3/4;
-    display: flex;
-    flex-direction: column;
+  background-color: white;
+  box-shadow: var(--shadow-1);
+  padding: 0 55px;
+  border-radius: 20px;
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
 }
 .EventFrom {
-    color: black;
-    align-items: center;
-    display: flex;
-    justify-content: center; /* Add this line */
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center; /* Add this line */
 }
-
-
-
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .reserve-form {
-    background: rgb(255, 255, 255);
-    border-radius: 30px;
-    width: 21rem;
-    height: auto;
-    padding: 2em; /* Add padding for consistent spacing */
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 21rem;
+  height: auto;
+  padding: 2em; /* Add padding for consistent spacing */
 }
 
 .reserve-form > ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2em 3em;
-    gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 3em;
+  gap: 0.5em;
 }
 
 .reserve-form > ul > ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "people phone1"
-        " . phone2";
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "people phone1"
+    " . phone2";
+  justify-content: space-between;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
-
+.hiform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+}
 .reserve-form label {
-    color: rgba(129, 129, 129, 1);
-    font-size: 0.75em;
-    font-weight: 400;
-    margin-bottom: 0.5em;
+  color: rgba(129, 129, 129, 1);
+  font-size: 0.75em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
 }
-.row{
-    display: flex;
-    flex-direction: row;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 .form-attr {
-    background-color: #FAFFFA;
-    font-size: 1em;
-    font-weight: 500;
-    color: rgba(129, 129, 129, 1);
-    border-radius: 20px; /* Adjust border-radius */
-    border: 1px solid #DCF5DB;
-    height: 2.5rem;
-    padding: 0.5rem;
-    width: 100%;
+  background-color: #fafffa;
+  font-size: 1em;
+  font-weight: 500;
+  color: rgba(129, 129, 129, 2);
+  border-radius: 20px; /* Adjust border-radius */
+  border: 1px solid #dcf5db;
+  height: 2.5rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 .form-attr:focus {
-    outline: 0.5px solid rgba(225, 225, 225, 1);
+  outline: 0.5px solid rgba(225, 225, 225, 1);
 }
-.image{
-        
-        color: black;
-        background-color: white;
-        width: 100%;
-        height: 3.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        border: 1px solid;
-        border-color:rgb(105, 170, 80);
-    
-    
+.image {
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: rgb(105, 170, 80);
 }
 
 .submit-button {
-    margin-top: 1rem;
-    color: white;
-    background-color: rgb(105, 170, 80);
-    width: 100%;
-    height: 3.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    border: 2px solid;
-    border-color: var(--color-border);
+  margin-top: 1rem;
+  color: white;
+  background-color: rgb(105, 170, 80);
+  width: 100%;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: var(--color-border);
 }

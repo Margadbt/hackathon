@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const SearchBar = () => {
+const Search = () => {
   const [location, setLocation] = useState("");
   const [generalData, setGeneralData] = useState([]);
   const [date, setDate] = useState("");
@@ -218,4 +218,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default Search;

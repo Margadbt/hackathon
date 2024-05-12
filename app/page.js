@@ -1,9 +1,8 @@
 "use client";
-import "@/app/app.style.css";
-import RoomCard from "@/components/RoomCard";
-import "@/styles/index.css";
-import "@/app/app.style.css";
-import SearchBar from "@/components/SearchBar";
+import "./app.style.css";
+import "../styles/styles.css";
+import SearchBar from "./components/SearchBar";
+
 import { useEffect } from "react";
 import { fetching } from "./script/FreeAngi";
 

@@ -1,11 +1,14 @@
-"use client"
+"use client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import login from "@/assets/login-icon.png";
+import React, { useState } from "react";
+import Link from "next/link";
+import UserPopUp from "./UserPopUp";
+import { Image } from "next/image";
+import logo from "@/assets/Logo.svg";
+import "@/styles/styles.css";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import UserPopUp from './UserPopUp';
-import Image from 'next/image';
-import logo from "@/assets/Logo.svg"
-import "@/styles/styles.css"
 const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
@@ -15,7 +18,6 @@ const Header = () => {
 
   return (
     <div className="main-header">
-     
       <nav>
         <div className="wrapper-wrap">
           <a href={"/"} className="header-logo">
@@ -31,7 +33,7 @@ const Header = () => {
           </div>
         </div>
         <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>
-          <i className="fa-regular fa-user"></i>
+          <FontAwesomeIcon icon={faUser} />
         </button>
         {isPopUpVisible && <UserPopUp />}
       </nav>
