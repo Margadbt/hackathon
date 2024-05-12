@@ -2,13 +2,16 @@
 import "./style.css"
 import React, { useEffect, useState } from 'react';
 import RoomCard from '../../components/RoomCard'; // Ensure this path is correct
+import searchBar from "../SearchBar";
 
 function FetchData() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+
     useEffect(() => {
+
         // Fetch data from the API
         const fetchData = async () => {
             try {
@@ -36,6 +39,7 @@ function FetchData() {
 
     // Render list of rooms using RoomCard components
     return (
+
         <div className="RoomCard-container">
             {data.slice(0, 20).map((room, index) => (
                 room.khicheeliin_bair.length >= 19 ? (
