@@ -21,34 +21,21 @@ const Header = () => {
       <nav>
         <div className="wrapper-wrap">
           <Link href={"/"}>
-            {" "}
-            {/* Add href attribute */}
-            <a className="header-logo">
-              {" "}
-              {/* Wrap with anchor tag */}
-              <Image
-                src={logo}
-                alt="classroom-picture"
-                className="hero-image"
-              />
-            </a>
+            <Image src={logo} alt="classroom-picture" className="hero-image" />
           </Link>
           <div className="header-wrap">
             <Link href={"/"}>
               <a className="nav-item">Анги захиалах</a>{" "}
               {/* Wrap with anchor tag */}
             </Link>
-            <Link href={"/event"}>
-              <a className="nav-item">Эвент</a> {/* Wrap with anchor tag */}
+            <Link href={"/event"} className="nav-item">
+              Эвент
             </Link>
           </div>
         </div>
-        <button
-          className="pop-up-btn"
-          id="profile-btn"
-          onClick={togglePopUp}
-        >
-        <FontAwesomeIcon icon={faUser} /></button>
+        <button className="pop-up-btn" id="profile-btn" onClick={togglePopUp}>
+          <FontAwesomeIcon icon={faUser} />
+        </button>
         {isPopUpVisible && <UserPopUp />}
       </nav>
     </div>
