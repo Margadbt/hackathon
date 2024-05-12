@@ -52,6 +52,7 @@
     border: none;
     background: none;
     cursor: pointer;
+    margin:6px;
 }
 
 .approve {
