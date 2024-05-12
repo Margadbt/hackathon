@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from 'react';
+"use client"
+import React, { useState } from 'react';
 import './style.css'
 const RequestedEventClass = ({data}) => {
-    const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
-    const togglePopUp = () => {
-      setIsPopUpVisible(!isPopUpVisible);
-    };
-  
 
     return (
         <div>
-                <div className="admin-container">
+                <div className={`admin-container`}>
                     <p><b>{data.date}</b></p>
-                    <div className="request-day">
+                    <div className={`request-day ${data.status == "approved" ? "approved" : data.status == "declined" ? "declined" : ""} `}>
                         <h2 ><b></b></h2>
-                        <div className="request-item">
+                        <div className={`request-item `}>
                             <div className="time-room">
                                 <p>{data.room} · Лекц</p>
                                 <p>16:00</p>
@@ -31,8 +27,8 @@ const RequestedEventClass = ({data}) => {
                             <button className='more-btn' onClick={togglePopUp}>...</button>
                             
                             <div className="actions">
-                                <button className="approve">✅️</button>
-                                <button className="reject">❌</button>
+                                <button className="approve" onClick={approve}>✅️</button>
+                                <button className="reject" onClick={declined}>❌</button>
                             </div>
                         </div>
                        
