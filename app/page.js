@@ -1,7 +1,7 @@
 "use client";
 import "./app.style.css";
 import "../styles/styles.css";
-import SearchBar from "../components/SearchBar";
+import Search from "../components/SearchBar";
 import RoomCard from "../components/RoomCard";
 import { useEffect } from "react";
 import { fetching } from "./script/FreeAngi";
@@ -19,7 +19,7 @@ export default function Home() {
     <main>
       <div className="app-main-wrapper">
         <div className="left-side">
-          
+          <Search/>
           <div className="main-content">
             {/* <RoomCard></RoomCard>
             <RoomCard></RoomCard>
