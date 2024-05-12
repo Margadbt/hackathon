@@ -2,7 +2,66 @@
 import React, { useState } from 'react';
 import './style.css'
 const RequestedEventClass = ({data}) => {
+    const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
+    const [status, setStatus] = useState(data.status);
+
+    function approve(){
+        const datareq = {
+            id: data.id,
+            status: "approved"
+          };
+          
+          fetch('/api/room/request/approve', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(datareq)
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            setStatus("approved");
+            return response.text();
+          })
+          .then(text => {
+            console.log('Response:', text);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+    }
+
+    function declined(){
+        const datareq = {
+            id: data.id,
+            status: "declined"
+          };
+          
+          fetch('/api/room/request/approve', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(datareq)
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            setStatus("declined");
+            return response.text();
+          })
+          .then(text => {
+            console.log('Response:', text);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+    }
+    console.log("Rendering with status:", status);
 
     return (
         <div>
