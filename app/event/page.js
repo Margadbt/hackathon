@@ -1,11 +1,11 @@
 "use client";
-import EventCard from "@/components/EventCard";
-import "./styles.css";
+import EventCard from "../../components/EventCard"
+import "./styles.css"
 
-import ProfileRoomCard from "@/components/ProfileRoomCard";
-import RoomCard from "@/components/RoomCard";
+import ProfileRoomCard from "../../components/ProfileRoomCard";
+import RoomCard from "../../components/RoomCard";
 import { useEffect, useState } from "react";
-import EventSpecialCard from "@/components/EventSpecialCard";
+import EventSpecialCard from "../../components/EventSpecialCard";
 
 export default function EventPage() {
   const [allEventData, setAllEventData] = useState([]);

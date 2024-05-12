@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import UserPopUp from './UserPopUp';
 import Image from 'next/image';
-import logo from "@/assets/Logo.svg"
-import "@/styles/styles.css"
+// import logo from "@/assets/Logo.svg"
 const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
 
@@ -19,7 +18,7 @@ const Header = () => {
       <nav>
         <div className="wrapper-wrap">
           <a href={"/"} className="header-logo">
-            <Image src={logo} alt="classroom-picture" className="hero-image" />
+            <Image src={""} alt="classroom-picture" className="hero-image" />
           </a>
           <div className="header-wrap">
             <a href={"/"}>

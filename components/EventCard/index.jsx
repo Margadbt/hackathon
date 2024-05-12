@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import "./styles.css";
-import classImage from "@/assets/rooms.jpg";
+import classImage from "../../assets/rooms.jpg";
 import Link from 'next/link';
 
 const EventCard = ({data}) => {
