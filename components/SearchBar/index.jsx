@@ -1,11 +1,11 @@
 "use client";
-import "@/app/script/FreeAngi.js";
-import HorLine from "@/assets/Line.svg";
-import SearchIcon from "@/assets/Search-button.svg";
+import "../../app/script/FreeAngi.js";
+import HorLine from "../../assets/Line.svg";
+import SearchIcon from "../../assets/Search-button.svg";
 import Image from "next/image";
 import { useState } from "react";
 import { useEffect } from "react";
-
+import "../../styles/index.css";
 const Search = () => {
   const [location, setLocation] = useState("");
   const [generalData, setGeneralData] = useState([]);

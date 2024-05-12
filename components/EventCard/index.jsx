@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import classRoom from "@/assets/eventpro.jpg";
+import classRoom from "../../assets/eventpro.jpg";
 import Image from "next/image";
 import "./styles.css";
-import classImage from "@/assets/rooms.jpg";
+import classImage from "../../assets/rooms.jpg";
 import Link from "next/link";
 
 const EventCard = ({ data }) => {

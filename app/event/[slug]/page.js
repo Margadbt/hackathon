@@ -1,10 +1,8 @@
 "use client";
-import classRoom from "@/assets/event.webp";
-// import { faCircle } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classRoom from "../../../assets/event.webp";
 import Image from "next/image";
 import "./style.css"; // Import CSS file
-import Detail from "@/components/EventDetailCard";
+import Detail from "../../../components/EventDetailCard";
 import { useEffect, useState } from "react";
 
 const EventDetailPage = ({ params }) => {

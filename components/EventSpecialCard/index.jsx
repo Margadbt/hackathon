@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import graduate from "@/assets/graduate.jpg";
+import graduate from "../../assets/graduate.jpg";
 import Image from "next/image";
 const EventSpecialCard = ({ data }) => {
   // Random image for the classroom
