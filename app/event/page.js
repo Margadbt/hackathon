@@ -38,7 +38,7 @@ export default function EventPage() {
       <div className="Event-sidebar">
         <Link href="/oyuna">
           {" "}
-          <button className="order-btn">Бүртгүүлэх</button>
+          <button className="order-btn">Event Зохиох уу?</button>
         </Link>
         <aside className="index-aside">
           <section>

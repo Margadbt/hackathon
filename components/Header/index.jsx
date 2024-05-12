@@ -6,6 +6,8 @@ import UserPopUp from "./UserPopUp";
 import Image from "next/image"; // Remove curly braces
 import logo from "../../assets/Logo.svg";
 import "../../styles/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
@@ -33,7 +35,7 @@ const Header = () => {
           </Link>
           <div className="header-wrap">
             <Link href={"/"}>
-              <a className="nav-item">Сул анги хайх</a>{" "}
+              <a className="nav-item">Анги захиалах</a>{" "}
               {/* Wrap with anchor tag */}
             </Link>
             <Link href={"/event"}>
@@ -45,7 +47,8 @@ const Header = () => {
           className="pop-up-btn"
           id="profile-btn"
           onClick={togglePopUp}
-        ></button>
+        >
+        <FontAwesomeIcon icon={faUser} /></button>
         {isPopUpVisible && <UserPopUp />}
       </nav>
     </div>

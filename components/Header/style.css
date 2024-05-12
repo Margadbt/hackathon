@@ -6,8 +6,8 @@
 
   & a {
     color: var(--color-text);
-    font-size: 14px;
     font-weight: var(--medium);
+    font-size: var(--medium-size);
   }
 }
 .wrapper-wrap {
@@ -16,4 +16,8 @@
 }
 .pop-up-btn {
   box-shadow: var(--shadow-2) !important;
+}
+.hero-image {
+  width: 4rem !important;
+  height: 4rem !important;
 }

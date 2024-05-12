@@ -9,7 +9,7 @@ import Link from "next/link";
 const EventCard = ({ data }) => {
   let i = Math.floor(Math.random() * 10000) + 1;
   return (
-    <a href={`/event/${data.id}`}>
+    <a href={`/event/${data.id}`} className="brab">
       <article className="event-section">
         <div className="img">
           <Image src={classRoom} alt="classroom-picture" className="image" />

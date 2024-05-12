@@ -1,9 +1,10 @@
 import Image from "next/image";
-import "@/app/profile/style.css";
-import ProfileRoomCard from "@/components/ProfileRoomCard";
-import ProfileSvg from "@/assets/Profile.svg";
-import HorizontalLine from "@/assets/Horizontal-line.svg";
-import VerticalLine from "@/assets/Vertical-line.svg";
+import "../../app/profile/style.css";
+import "../profile/style.css";
+import ProfileRoomCard from "../../components/ProfileRoomCard";
+import ProfileSvg from "../../assets/Profile.svg";
+import HorizontalLine from "../../assets/Horizontal-line.svg";
+import VerticalLine from "../../assets/Vertical-line.svg";
 
 export default function Home() {
   return (

@@ -1,13 +1,12 @@
-import EventCard from "@/components/EventCard";
-import EventDetailCard from "@/components/EventDetailCard";
-import EventForm from "@/components/EventForm";
-import EventSpecialCard from "@/components/EventSpecialCard";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faUser} from '@fortawesome/free-solid-svg-icons'
+import RoomCard from '../../components/RoomCard'
+import ProfileRoomCard from '../../components/ProfileRoomCard'
 // khangal preview
 export default function Event(){
     return(
     <div>
-<EventSpecialCard/>
+<ProfileRoomCard/>
     </div>
 
 
