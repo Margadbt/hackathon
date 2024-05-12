@@ -14,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header></Header>
-        <div style={{ margin: "7rem 6rem 0 6rem" }}>{children}</div>
+        <div className="app-margin" style={{ margin: "7rem 6rem 0 6rem" }}>
+          {children}
+        </div>
       </body>
     </html>
   );
