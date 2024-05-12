@@ -122,8 +122,6 @@
   border-color: transparent;
 }
 
-
-
 /* aside.index-aside {
     width: 25%;
     margin-left: auto;
@@ -148,7 +146,6 @@
     font-weight: var(--bold);
     margin-top: 4px;
   } */
-
 
 main {
   margin-top: 10.4375rem;
@@ -188,8 +185,6 @@ main {
     flex-direction: column;
     margin: 0;
   }
-
-
 
   .class-filter ul > li > button {
     width: 4.625rem;
@@ -319,8 +314,8 @@ main {
   display: grid !important;
 }
 .tsag-list {
-  /* display: none;
-  display: none; */
+  display: none;
+  display: none;
   position: absolute;
   z-index: 999;
   width: 15rem;
@@ -360,14 +355,13 @@ main {
   color: var(--color-white);
 }
 
-.class-section-1{
+.class-section-1 {
   width: 17rem;
   flex-wrap: wrap;
-  & h3{
+  & h3 {
     flex-wrap: wrap;
-
   }
 }
-.class-type{
+.class-type {
   padding-top: 0.7rem;
 }
