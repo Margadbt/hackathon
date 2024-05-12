@@ -2,8 +2,7 @@
 import React, { useState } from 'react';
 import './style.css'
 const RequestedEventClass = ({data}) => {
-    const [isPopUpVisible, setIsPopUpVisible] = useState(false);
-
+   
     const [status, setStatus] = useState(data.status);
 
     function approve(){
@@ -83,7 +82,7 @@ const RequestedEventClass = ({data}) => {
                                 <p>{data.phone_num_one}</p>
                                 
                             </div>
-                            <button className='more-btn' onClick={togglePopUp}>...</button>
+                           
                             
                             <div className="actions">
                                 <button className="approve" onClick={approve}>✅️</button>
@@ -93,11 +92,7 @@ const RequestedEventClass = ({data}) => {
                        
                         {/* Repeat .request-item for more requests */}
                     </div>
-                    {isPopUpVisible && (<div className="popup-status">
-                                <p>{data.description}</p>
-                                <p>{data.phone_num_two}</p>
-                               
-                            </div>)}
+                   
                     {/* Repeat .request-day for more days */}
                 </div>
 
