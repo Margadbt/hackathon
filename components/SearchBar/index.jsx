@@ -3,6 +3,8 @@ import "@/app/script/FreeAngi.js";
 import HorLine from "@/assets/Line.svg";
 import SearchIcon from "@/assets/Search-button.svg";
 import Image from "next/image";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const SearchBar = () => {
   const [location, setLocation] = useState("");
@@ -103,7 +105,7 @@ const SearchBar = () => {
     <nav>
       <div className="search-bar">
         <li className="bair">
-          <button id="bair-button" onClick={togglePopUp}>
+          <button id="bair-button">
             <span>Хичээлийн байр</span>
             <span className="light-grey" id="bair-info">
               <select
@@ -123,7 +125,6 @@ const SearchBar = () => {
               </select>
             </span>
           </button>
-          {isPopUpVisible && <SearchBarBairList></SearchBarBairList>}
         </li>
         <Image src={HorLine} alt="line" />
         <li className="odor">
