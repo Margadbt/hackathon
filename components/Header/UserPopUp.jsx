@@ -12,7 +12,7 @@ const UserPopUp = () => {
         <Link href={"/login"} className="button">Нэвтрэх</Link>
       </li>
       <li>
-        <Link href={"/login"}  className="reserved-menu menu"><span>Захиалсан ангиуд</span></Link>
+        <Link href={"/profile"}  className="reserved-menu menu"><span>Захиалсан ангиуд</span></Link>
       </li>
       <li>
         <Link href={"/login"}  className="contact-menu menu"><span>Холбогдох</span></Link>
